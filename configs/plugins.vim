@@ -75,7 +75,7 @@ Plug 'godlygeek/tabular'
 
 " Comfy scroll
 " Plug 'yuttie/comfortable-motion.vim'
-
+Plug 'terryma/vim-smooth-scroll'
 " Add DevIcons
 Plug 'ryanoasis/vim-devicons'
 
@@ -100,7 +100,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'lifepillar/vim-gruvbox8'
 
 " Translator
-" Plug 'voldikss/vim-translator'
+ Plug 'voldikss/vim-translator'
 
 " Markdown Preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }

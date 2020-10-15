@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/Projects/AdiWiayataConsultin'
+let g:netrw_dirhist_8='/home/Projects/AdiWiayataConsultin/Backend'
+let g:netrw_dirhist_7='/home/Projects/AdiWiayataConsultin/Backend/vendor'
 let g:netrw_dirhist_6='/home/deve/.config/nvim/configs'
 let g:netrw_dirhist_5='/home/Projects/MutasiTabungan/laravel'
 let g:netrw_dirhist_4='/home/deve/.config/i3'

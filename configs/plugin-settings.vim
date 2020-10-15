@@ -304,3 +304,5 @@ set guioptions-=e  " Don't use GUI tabline
 " far.vim
 let g:far#enable_undo=1
 
+" let g:comfortable_motion_scroll_down_key = "j"
+" let g:comfortable_motion_scroll_up_key = "k"
