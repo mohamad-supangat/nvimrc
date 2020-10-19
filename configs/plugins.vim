@@ -131,7 +131,7 @@ Plug 'Rican7/php-doc-modded', { 'for': 'php' } " Automatic phpdoc comments
 "}}}
 
 " Dart && flutter {{{
-Plugin 'dart-lang/dart-vim-plugin'
+Plug 'dart-lang/dart-vim-plugin'
 Plug 'thosakwe/vim-flutter'
 " }}}
 
