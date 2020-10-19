@@ -226,9 +226,10 @@ map <C-a> <esc>ggVG
 " inoremap <C-y>  <Esc>:redo<CR>
 nnoremap <C-Z> u
 nnoremap <C-Y> <C-R>
-
 inoremap <C-Z> <C-O>u
 inoremap <C-Y> <C-O><C-R>
+vnoremap <C-Z> <C-O>u
+vnoremap <C-Y> <C-O><C-R>
 " FIXME: (broken) ctrl s to save
 "
 noremap  <C-S> :update<CR>
