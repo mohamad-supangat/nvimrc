@@ -220,11 +220,15 @@ imap <A-BS> <C-W>
 " select all
 map <C-a> <esc>ggVG
 " Undo, Redo (broken)
-nnoremap <C-z>  :undo<CR>
-inoremap <C-z>  <Esc>:undo<CR>
-nnoremap <C-y>  :redo<CR>
-inoremap <C-y>  <Esc>:redo<CR>
+" nnoremap <C-z>  :undo<CR>
+" inoremap <C-z>  <Esc>:undo<CR>
+" nnoremap <C-y>  :redo<CR>
+" inoremap <C-y>  <Esc>:redo<CR>
+nnoremap <C-Z> u
+nnoremap <C-Y> <C-R>
 
+inoremap <C-Z> <C-O>u
+inoremap <C-Y> <C-O><C-R>
 " FIXME: (broken) ctrl s to save
 "
 noremap  <C-S> :update<CR>
@@ -288,3 +292,7 @@ xnoremap <leader>p "_dP
 " Smooth scrooling
 noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
 noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
+
+
+" exit insert mode with jj key 
+inoremap jj <ESC>

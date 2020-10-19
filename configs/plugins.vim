@@ -15,15 +15,9 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('~/.config/nvim/plugged')
+set nocompatible
 
-Plug 'ludovicchabant/vim-gutentags', { 'for': ['js', 'vue', 'php'] } " Keep tags in sync
-Plug 'tpope/vim-ragtag' " Enhancement of surround for html
-Plug 'tpope/vim-repeat' " repeat last command with .
-Plug 'tpope/vim-dadbod' " Modern database interface for Vim
-Plug 'tpope/vim-dispatch' " Needed for dadbod
-Plug 'https://github.com/alok/notational-fzf-vim' " note taking
-Plug 'prettier/vim-prettier', { 'do': 'npm install' } " prettier integration
+call plug#begin('~/.config/nvim/plugged')
 
 " Git wrapper
 Plug 'tpope/vim-fugitive'
@@ -57,24 +51,13 @@ Plug 'christoomey/vim-tmux-navigator'
 " Custom start page
 Plug 'mhinz/vim-startify'
 
-" Vim Javascript
-Plug 'pangloss/vim-javascript'
-
-" Language Packs
-Plug 'sheerun/vim-polyglot'
-
-" Status bar
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
-" Change airline with lightline
+" status line
 Plug 'itchyny/lightline.vim'
 Plug 'mengelbrecht/lightline-bufferline' " line bufferline
 
 " Tabular auto-align
 Plug 'godlygeek/tabular'
 
-" Comfy scroll
-" Plug 'yuttie/comfortable-motion.vim'
 Plug 'terryma/vim-smooth-scroll'
 " Add DevIcons
 Plug 'ryanoasis/vim-devicons'
@@ -91,12 +74,11 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'junegunn/vim-emoji'
 
 " goyo distraction free mode
-Plug 'junegunn/goyo.vim'
+" Plug 'junegunn/goyo.vim'
 
 " LaTeX support
 " Plug 'lervag/vimtex'
 
-" Wal theme
 Plug 'lifepillar/vim-gruvbox8'
 
 " Translator
@@ -112,19 +94,19 @@ Plug 'etdev/vim-hexcolor'
 Plug 'easymotion/vim-easymotion'
 
 " ctrlsf search  in all file in folder
-" Plug 'dyng/ctrlsf.vim'
 Plug 'brooth/far.vim'
 
 " linting && fixer
 Plug 'dense-analysis/ale'
 
 " auto formater
-Plug 'chiel92/vim-autoformat'
+" Plug 'chiel92/vim-autoformat'
 
 " fuzy file search
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+Plug 'sheerun/vim-polyglot' " language server pack 
 
 " html / templates{{{
 Plug 'mattn/emmet-vim', { 'for': ['html', 'php', 'gohtmltmpl', 'vue', 'markdown'] } " emmet support for vim - easily create markdup wth CSS-like syntax
@@ -135,6 +117,8 @@ Plug 'Glench/Vim-Jinja2-Syntax', { 'for': ['html'] }
 "}}}
 
 " JavaScript{{{
+
+Plug 'pangloss/vim-javascript'
 Plug 'gavocanov/vim-js-indent', { 'for': [ 'javascript' ]} " JavaScript indent support
 Plug 'heavenshell/vim-jsdoc', { 'for': [ 'javascript', 'vue' ]} " Generate JSDoc comments
 Plug 'posva/vim-vue', { 'for': [ 'javascript', 'html', 'vue' ] } " vue.js integration
@@ -146,10 +130,16 @@ Plug 'captbaritone/better-indent-support-for-php-with-html', { 'for': 'php' }
 Plug 'Rican7/php-doc-modded', { 'for': 'php' } " Automatic phpdoc comments
 "}}}
 
+" Dart && flutter {{{
+Plugin 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
+" }}}
+
 " script runnner
 Plug 'aben20807/vim-runner'
 
+
+
 " simple todo 
-" Plug 'irrationalistic/vim-tasks'
 Plug 'aserebryakov/vim-todo-lists'
 call plug#end()
