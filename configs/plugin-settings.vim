@@ -7,46 +7,12 @@
 "
 "*****************************************************************************************
 
-"""""""""""""""
-" Vim polyglot"
-"""""""""""""""
-"let g:polyglot_disabled = ['latex']
-
 
 """""""""""""""
 " Git Gutter  "
 """""""""""""""
 let g:gitgutter_enabled = 1
 let g:gitgutter_grep=''
-
-"""""""""""
-" VimTex  "
-"""""""""""
-let g:latex_view_general_viewer = "zathura"
-let g:vimtex_view_method = "zathura"
-let g:tex_flavor = "latex"
-let g:vimtex_quickfix_open_on_warning = 0
-let g:vimtex_quickfix_mode = 2
-let g:vimtex_compiler_method = "latexmk"
-let g:vimtex_compiler_progname = 'nvr'
-let g:vimtex_compiler_latexmk = {
-    \ 'background' : 1,
-    \ 'build_dir' : '',
-    \ 'callback' : 1,
-    \ 'continuous' : 1,
-    \ 'executable' : 'latexmk',
-    \ 'options' : [
-    \   '-verbose',
-    \   '-file-line-error',
-    \   '-synctex=1',
-    \   '-interaction=nonstopmode',
-    \ ],
-    \}
-
-"""""""""""
-" Goyo    "
-"""""""""""
-nmap <F6> :Goyo<CR>
 
 
 """""""""""
@@ -58,52 +24,6 @@ let g:vista_executive_for = {
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 let g:vista#renderer#enable_icon = 1
 let g:vista_sidebar_width = 50
-
-""""""""""""
-"NerdTree  "
-""""""""""""
-" if nerdtree is only window, kill nerdtree so bffer can die
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | :bdelete | endif
-map <F7> :NERDTreeToggle<CR>
-let NERDTreeQuitOnOpen = 0
-let NERDTreeShowHidden=1
-let NERDChristmasTree=1
-let g:NERDTreeMinimalUI = 1
-let g:NERDTreeWinSize = 25
-" let g:NERDTreeDirArrowExpandable = '▷'
-" let g:NERDTreeDirArrowCollapsible = '▼'
-let NERDTreeAutoCenter=1
-let g:NERDTreeIndicatorMapCustom = {
-        \ "modified"  : "✹",
-        \ "staged"    : "✚",
-        \ "untracked" : "✭",
-        \ "renamed"   : "➜",
-        \ "unmerged"  : "═",
-        \ "deleted"   : "✖",
-        \ "dirty"     : "✗",
-        \ "clean"     : "✔︎",
-        \ 'ignored'   : '☒',
-        \ "unknown"   : "?"
-        \ }
-
-
-"""""""""""""
-"Devicons   "
-"""""""""""""
-let g:webdevicons_enable = 1
-let g:webdevicons_enable_unite = 1
-let g:webdevicons_enable_denite = 1
-let g:webdevicons_enable_nerdtree = 1
-" let g:webdevicons_enable_airline_tabline = 1
-let g:webdevicons_enable_vimfiler = 1
-let g:WebDevIconsUnicodeDecorateFileNodes = 1
-let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
-" let g:webdevicons_enable_airline_statusline = 1
-let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
-let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
-let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = ''
-let g:DevIconsDefaultFolderOpenSymbol = ''
 
 """"""""""
 " Emoji  "
@@ -136,8 +56,8 @@ let g:indentLine_fileTypeExclude = [
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsMultilineClose = 0
 
-" KEY REMAPS ""
-set updatetime=300
+" KEY REMAPS
+set updatetime=30
 " let g:ycm_server_python_interpreter = '/usr/bin/python3'
 let g:coc_snippet_next = '<TAB>'
 let g:coc_snippet_prev = '<S-TAB>'
@@ -234,12 +154,7 @@ let g:lightline = {
 \     'filetype': 'LightlineFiletype',
 \   }
 \}
-" let g:lightline.separator = {
-" \  'left': '', 'right': ''
-" \}
-" let g:lightline.subseparator = {
-" \   'left': '', 'right': ''
-" \}
+
 
 let g:lightline.tabline = {
 \   'left': [['buffers']],
@@ -306,3 +221,9 @@ let g:far#enable_undo=1
 
 " let g:comfortable_motion_scroll_down_key = "j"
 " let g:comfortable_motion_scroll_up_key = "k"
+
+
+" Config for dart language {{{
+let g:dart_style_guide = 2 " enable dart style guide
+let g:dart_format_on_save = 1 " enable auto format on save
+" }}}

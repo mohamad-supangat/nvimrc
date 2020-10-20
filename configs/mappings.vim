@@ -175,20 +175,8 @@ vmap <silent> <Leader>tw <Plug>TranslateWV
 nmap <silent> <Leader>tr <Plug>TranslateR
 vmap <silent> <Leader>tr <Plug>TranslateRV
 
-
-" Vimtex
-nmap <silent> <Leader>lc :VimtexCompile<cr>
-vmap <silent> <Leader>ls :VimtexCompileSelected<cr>
-nmap <silent> <Leader>li :VimtexInfo<cr>
-nmap <silent> <Leader>lt :VimtexTocToggle<cr>
-nmap <silent> <Leader>lv :VimtexView<cr>
-
-
 " Markdown preview
 nmap <Leader>md <Plug>MarkdownPreviewToggle
-
-" Table mode toggle
-" nmap <silent> <Leader>tm :TableModeToggle<cr>
 
 " vim-minimap controls
 let g:minimap_show='<leader>ms'
@@ -219,24 +207,23 @@ imap <A-BS> <C-W>
 
 " select all
 map <C-a> <esc>ggVG
-" Undo, Redo (broken)
-" nnoremap <C-z>  :undo<CR>
-" inoremap <C-z>  <Esc>:undo<CR>
-" nnoremap <C-y>  :redo<CR>
-" inoremap <C-y>  <Esc>:redo<CR>
+
+" undo redo {{{
 nnoremap <C-Z> u
 nnoremap <C-Y> <C-R>
 inoremap <C-Z> <C-O>u
 inoremap <C-Y> <C-O><C-R>
 vnoremap <C-Z> <C-O>u
 vnoremap <C-Y> <C-O><C-R>
+" }}}
+
 " FIXME: (broken) ctrl s to save
 "
 noremap  <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <Esc>:update<CR>
 
-" shift+arrow selection
+" shift+arrow selection {{{
 nmap <S-Up> v<Up>
 nmap <S-Down> v<Down>
 nmap <S-Left> v<Left>
@@ -249,10 +236,11 @@ imap <S-Up> <Esc>v<Up>
 imap <S-Down> <Esc>v<Down>
 imap <S-Lef> <Esc>v<Left>
 imap <S-Right> <Esc>v<Right>
+" }}}
 
 " Find
-" imap <C-f> /
 nmap <C-f> /
+
 " shortcut for far.vim find
 nnoremap <silent> <Find-Shortcut>  :Farf<cr>
 vnoremap <silent> <Find-Shortcut>  :Farf<cr>
@@ -297,3 +285,7 @@ noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
 
 " exit insert mode with jj key 
 inoremap jj <ESC>
+
+" coc explorerr {{
+:nmap <F7> :CocCommand explorer<CR>
+" }}

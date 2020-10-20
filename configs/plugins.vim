@@ -59,25 +59,16 @@ Plug 'mengelbrecht/lightline-bufferline' " line bufferline
 Plug 'godlygeek/tabular'
 
 Plug 'terryma/vim-smooth-scroll'
+
+
 " Add DevIcons
 Plug 'ryanoasis/vim-devicons'
-
 " Tagbar
 " Plug 'liuchengxu/vista.vim'
 
-" NERDTree
-Plug 'scrooloose/nerdtree', { 'on': [ 'NERDTreeToggle', 'NERDTreeFind' ] }
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Emoji support
 Plug 'junegunn/vim-emoji'
-
-" goyo distraction free mode
-" Plug 'junegunn/goyo.vim'
-
-" LaTeX support
-" Plug 'lervag/vimtex'
 
 Plug 'lifepillar/vim-gruvbox8'
 
@@ -100,7 +91,7 @@ Plug 'brooth/far.vim'
 Plug 'dense-analysis/ale'
 
 " auto formater
-" Plug 'chiel92/vim-autoformat'
+Plug 'chiel92/vim-autoformat'
 
 " fuzy file search
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -137,9 +128,6 @@ Plug 'thosakwe/vim-flutter'
 
 " script runnner
 Plug 'aben20807/vim-runner'
-
-
-
 " simple todo 
 Plug 'aserebryakov/vim-todo-lists'
 call plug#end()
