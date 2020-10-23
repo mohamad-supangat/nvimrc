@@ -43,8 +43,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'Yggdroot/indentLine'
 " indent line
 
-" COC
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " fuzy file search
 Plug 'christoomey/vim-tmux-navigator'
 
@@ -93,9 +92,11 @@ Plug 'dense-analysis/ale'
 " auto formater
 Plug 'chiel92/vim-autoformat'
 
-" fuzy file search
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+" fuzy file search && COC
+Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
+Plug 'junegunn/fzf.vim' " needed for previews
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'antoinemadec/coc-fzf'
 
 Plug 'sheerun/vim-polyglot' " language server pack 
 
