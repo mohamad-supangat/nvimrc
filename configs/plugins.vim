@@ -121,11 +121,6 @@ Plug 'captbaritone/better-indent-support-for-php-with-html', { 'for': 'php' }
 Plug 'Rican7/php-doc-modded', { 'for': 'php' } " Automatic phpdoc comments
 "}}}
 
-" Dart && flutter {{{
-Plug 'dart-lang/dart-vim-plugin'
-Plug 'thosakwe/vim-flutter'
-" }}}
-
 " script runnner
 Plug 'aben20807/vim-runner'
 " simple todo 

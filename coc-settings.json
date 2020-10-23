@@ -16,7 +16,7 @@
   "list.source.files.defaultOptions": ["--auto-preview"],
   "list.source.outline.defaultOptions": ["--auto-preview"],
   //prettier
-  "coc.preferences.formatOnSaveFiletypes": ["css"],
+  "coc.preferences.formatOnSaveFiletypes": ["css", "dart", "php", "vue"],
   "prettier.statusItemText": "★ ",
   "prettier.eslintIntegration": true,
   "prettier.tslintIntegration": true,
@@ -61,7 +61,7 @@
     "default": "\uf29c"
   },
 
- "java.home": "/usr/lib/jvm/java-13-openjdk/",
+ "java.home": "/usr/lib/jvm/default/",
  "eslint.trace.server": "verbose",
  "languageserver": {
    "ccls": {
