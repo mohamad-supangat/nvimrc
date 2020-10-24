@@ -63,13 +63,18 @@ Plug 'terryma/vim-smooth-scroll'
 " Add DevIcons
 Plug 'ryanoasis/vim-devicons'
 " Tagbar
-" Plug 'liuchengxu/vista.vim'
+
+Plug 'liuchengxu/vista.vim'
 
 
 " Emoji support
 Plug 'junegunn/vim-emoji'
 
+" color scheme collection {{{
+" Plug 'rafi/awesome-vim-colorschemes'
 Plug 'lifepillar/vim-gruvbox8'
+
+" }}}
 
 " Translator
  Plug 'voldikss/vim-translator'
@@ -78,7 +83,8 @@ Plug 'lifepillar/vim-gruvbox8'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
 " vim-hexcolor
-Plug 'etdev/vim-hexcolor'
+" Plug 'etdev/vim-hexcolor'
+Plug 'chrisbra/colorizer'
 
 " Easymodion
 Plug 'easymotion/vim-easymotion'
