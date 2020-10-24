@@ -130,7 +130,7 @@ nnoremap  <Leader>gsc  :CocCommand git.showCommit<cr>
 " Toggle git gutter sign columns
 nnoremap  <Leader>gg  :CocCommand git.toggleGutters<cr>
 " Lazygit
-nnoremap <silent> <Leader>lg :call ToggleLazyGit()<CR>
+nnoremap <silent> <Leader>git :call ToggleLazyGit()<CR>
 " }}
 
 " NERD Commenter {{{
