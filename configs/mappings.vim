@@ -260,6 +260,9 @@ noremap <C-PageUp>  :bprevious<CR>
 inoremap <C-PageUp>  <Esc>:bprevious<CR>i
 nnoremap <C-PageDown>  :bnext<CR>
 inoremap <C-PageDown>  <Esc>:bnext<CR>i
+
+nnoremap <Leader>bn :bnext<CR>
+nnoremap <Leader>bb :bprevious<CR>
 nnoremap <Leader>bd :bdelete<CR> 
 " }}}
 " replacing tabs with buffer
