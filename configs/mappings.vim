@@ -269,6 +269,7 @@ nnoremap <Leader>bd :bdelete<CR>
 nnoremap <leader>d "_d
 xnoremap <leader>d "_d
 xnoremap <leader>p "_dP
+vmap <BS> "_d
 " }}}
 
 " Smooth scrooling {{{
@@ -281,4 +282,5 @@ noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
 nmap <F7> :CocCommand explorer<CR>
 " toogle fzf coc
 nmap <leader>coc :CocFzfList<CR>
+nmap <leader>P :CocFzfList commands<CR>
 " }}
