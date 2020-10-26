@@ -18,6 +18,8 @@ endif
 set nocompatible
 
 call plug#begin('~/.config/nvim/plugged')
+Plug 'mhinz/vim-signify'
+Plug 'ryanoasis/vim-devicons'
 
 " Git wrapper
 Plug 'tpope/vim-fugitive'
@@ -44,24 +46,23 @@ Plug 'Yggdroot/indentLine'
 " indent line
 
 
-" fuzy file search
+" samakan keybinding vim dengan tmux agar mudah berpindah
 Plug 'christoomey/vim-tmux-navigator'
 
 " Custom start page
 Plug 'mhinz/vim-startify'
+" Plug 'glepnir/dashboard-nvim'
 
 " status line
 Plug 'itchyny/lightline.vim'
 Plug 'mengelbrecht/lightline-bufferline' " line bufferline
+" Plug 'https://github.com/adelarsq/neoline.vim'
 
 " Tabular auto-align
 Plug 'godlygeek/tabular'
 
 Plug 'terryma/vim-smooth-scroll'
 
-
-" Add DevIcons
-Plug 'ryanoasis/vim-devicons'
 " Tagbar
 
 Plug 'liuchengxu/vista.vim'

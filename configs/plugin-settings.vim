@@ -70,7 +70,7 @@ let g:NERDSpaceDelims = 1
 " Use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
 " Allow commenting and inverting empty lines (useful when commenting a region)
-"
+
 
 " Hide status bar while using fzf commands                                                                          
 if has('nvim') || has('gui_running')                                                                                
@@ -221,9 +221,3 @@ let g:far#enable_undo=1
 
 " let g:comfortable_motion_scroll_down_key = "j"
 " let g:comfortable_motion_scroll_up_key = "k"
-
-
-" Config for dart language {{{
-let g:dart_style_guide = 2 " enable dart style guide
-let g:dart_format_on_save = 1 " enable auto format on save
-" }}}
