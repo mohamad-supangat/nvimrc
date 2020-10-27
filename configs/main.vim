@@ -10,13 +10,8 @@
 
 
 " Colorscheme
-" :colorscheme wal
-" set fold level && terminal 256 color scheme
-" set term=cons25
-" set foldlevel=99
-" set t_Co=256
-" let base16colorspace=256
-" set termguicolors
+set t_Co=256
+set termguicolors
 set background=dark
 colorscheme gruvbox8_hard
 " autocmd vimenter * colorscheme gruvbox

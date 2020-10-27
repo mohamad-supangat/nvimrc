@@ -19,7 +19,6 @@ set nocompatible
 
 call plug#begin('~/.config/nvim/plugged')
 Plug 'mhinz/vim-signify'
-Plug 'ryanoasis/vim-devicons'
 
 " Git wrapper
 Plug 'tpope/vim-fugitive'
@@ -54,9 +53,11 @@ Plug 'mhinz/vim-startify'
 " Plug 'glepnir/dashboard-nvim'
 
 " status line
-Plug 'itchyny/lightline.vim'
-Plug 'mengelbrecht/lightline-bufferline' " line bufferline
+" Plug 'itchyny/lightline.vim'
+" Plug 'mengelbrecht/lightline-bufferline' " line bufferline
 " Plug 'https://github.com/adelarsq/neoline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Tabular auto-align
 Plug 'godlygeek/tabular'
@@ -74,7 +75,8 @@ Plug 'junegunn/vim-emoji'
 " color scheme collection {{{
 " Plug 'rafi/awesome-vim-colorschemes'
 Plug 'lifepillar/vim-gruvbox8'
-
+Plug 'ayu-theme/ayu-vim' 
+Plug 'ajmwagar/vim-deus'
 " }}}
 
 " Translator
@@ -105,32 +107,13 @@ Plug 'junegunn/fzf.vim' " needed for previews
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'antoinemadec/coc-fzf'
 
-Plug 'sheerun/vim-polyglot' " language server pack 
-
-" html / templates{{{
-Plug 'mattn/emmet-vim', { 'for': ['html', 'php', 'gohtmltmpl', 'vue', 'markdown'] } " emmet support for vim - easily create markdup wth CSS-like syntax
-Plug 'gregsexton/MatchTag', { 'for': ['html', 'php', 'gohtmltmpl', 'vue'] } " match tags in html, similar to paren support
-Plug 'othree/html5.vim', { 'for': ['html', 'php', 'gohtmltmpl', 'vue'] } " html5 support
-" Plug 'lumiliet/vim-twig', { 'for': ['html'] } " twig syntax support
-Plug 'Glench/Vim-Jinja2-Syntax', { 'for': ['html'] }
-"}}}
-
-" JavaScript{{{
-
-Plug 'pangloss/vim-javascript'
-Plug 'gavocanov/vim-js-indent', { 'for': [ 'javascript' ]} " JavaScript indent support
-Plug 'heavenshell/vim-jsdoc', { 'for': [ 'javascript', 'vue' ]} " Generate JSDoc comments
-Plug 'posva/vim-vue', { 'for': [ 'javascript', 'html', 'vue' ] } " vue.js integration
-"}}}
-
-" PHP{{{
-Plug 'captbaritone/better-indent-support-for-php-with-html', { 'for': 'php' }
-" Plug 'lumiliet/vim-twig', { 'for': [ 'php', 'html' ] } " Twig templates
-Plug 'Rican7/php-doc-modded', { 'for': 'php' } " Automatic phpdoc comments
-"}}}
+Plug 'sheerun/vim-polyglot' " language server pack
 
 " script runnner
 Plug 'aben20807/vim-runner'
 " simple todo 
 Plug 'aserebryakov/vim-todo-lists'
+
+" icons
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
