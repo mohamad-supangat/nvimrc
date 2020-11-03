@@ -31,6 +31,9 @@ Plug 'akinsho/nvim-bufferline.lua'
 " Status line writen by lua
 Plug 'glepnir/galaxyline.nvim'
 
+" tree explorer
+Plug 'kyazdani42/nvim-tree.lua'
+
 
 " Git wrapper
 Plug 'tpope/vim-fugitive'

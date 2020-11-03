@@ -283,7 +283,7 @@ noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
 
 " coc && fzf keybinds {{
 " toogle explorer
-nmap <F7> :CocCommand explorer<CR>
+nmap <F7> :LuaTreeToggle<CR>
 " toogle fzf coc
 nmap <leader>coc :CocFzfList<CR>
 nmap <leader>P :CocFzfList commands<CR>
