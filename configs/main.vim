@@ -8,12 +8,15 @@
 "***********************************************************************************
 
 
-
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
 " Colorscheme
 set t_Co=256
 set termguicolors
-set background=dark
+" set background=black
 colorscheme gruvbox8_hard
+" colorscheme onedark
+" let g:onedark_terminal_italics = 1
 " autocmd vimenter * colorscheme gruvbox
 
 augroup specify_filetype
@@ -56,7 +59,7 @@ set regexpengine=1        " use old regexp engine
 set hidden
 
 " Statusline Config
-set statusline+=%F
+" set statusline+=%F
 set cmdheight=1
 
 " Tab Settings
@@ -98,6 +101,22 @@ set undodir^=$HOME/.config/nvim/storage/undos//
 
 " line wrapping
 set wrap
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=4000
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+if has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
 
 " Turns on detection for fyletypes, indentation files and plugin files
 filetype plugin indent on
@@ -162,6 +181,7 @@ set number
 set nobackup
 set nowritebackup
 set noswapfile
+
 
 
 

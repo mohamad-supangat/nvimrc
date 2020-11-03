@@ -18,12 +18,24 @@ endif
 set nocompatible
 
 call plug#begin('~/.config/nvim/plugged')
-Plug 'mhinz/vim-signify'
+
+" web icon with color
+Plug 'kyazdani42/nvim-web-devicons'
+
+" lua nvim config
+Plug 'neovim/nvim-lspconfig'
+
+" buffer line for tab written with lua
+Plug 'akinsho/nvim-bufferline.lua'
+
+" Status line writen by lua
+Plug 'glepnir/galaxyline.nvim'
+
 
 " Git wrapper
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-rhubarb'
+" Plug 'tpope/vim-rhubarb'
 
 " Nerd Commenter
 Plug 'scrooloose/nerdcommenter'
@@ -42,58 +54,32 @@ Plug 'terryma/vim-multiple-cursors'
 
 "" Indent guides
 Plug 'Yggdroot/indentLine'
-" indent line
-
 
 " samakan keybinding vim dengan tmux agar mudah berpindah
 Plug 'christoomey/vim-tmux-navigator'
 
-" Custom start page
-Plug 'mhinz/vim-startify'
-" Plug 'glepnir/dashboard-nvim'
-
-" status line
-" Plug 'itchyny/lightline.vim'
-" Plug 'mengelbrecht/lightline-bufferline' " line bufferline
-" Plug 'https://github.com/adelarsq/neoline.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-" Tabular auto-align
-Plug 'godlygeek/tabular'
-
-Plug 'terryma/vim-smooth-scroll'
-
 " Tagbar
-
-Plug 'liuchengxu/vista.vim'
+" Plug 'liuchengxu/vista.vim'
 
 
 " Emoji support
-Plug 'junegunn/vim-emoji'
+" Plug 'junegunn/vim-emoji'
 
 " color scheme collection {{{
-" Plug 'rafi/awesome-vim-colorschemes'
 Plug 'lifepillar/vim-gruvbox8'
-Plug 'ayu-theme/ayu-vim' 
-Plug 'ajmwagar/vim-deus'
 " }}}
 
-" Translator
- Plug 'voldikss/vim-translator'
-
 " Markdown Preview
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+" Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
 " vim-hexcolor
-" Plug 'etdev/vim-hexcolor'
-Plug 'chrisbra/colorizer'
+" Plug 'chrisbra/colorizer'
 
 " Easymodion
-Plug 'easymotion/vim-easymotion'
+" Plug 'easymotion/vim-easymotion'
 
 " ctrlsf search  in all file in folder
-Plug 'brooth/far.vim'
+" Plug 'brooth/far.vim'
 
 " linting && fixer
 Plug 'dense-analysis/ale'
@@ -104,16 +90,15 @@ Plug 'chiel92/vim-autoformat'
 " fuzy file search && COC
 Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
 Plug 'junegunn/fzf.vim' " needed for previews
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'antoinemadec/coc-fzf'
 
 Plug 'sheerun/vim-polyglot' " language server pack
 
 " script runnner
-Plug 'aben20807/vim-runner'
+" Plug 'aben20807/vim-runner'
 " simple todo 
-Plug 'aserebryakov/vim-todo-lists'
+" Plug 'aserebryakov/vim-todo-lists'
+" Plug 'nvim-lua/completion-nvim'
 
-" icons
-Plug 'ryanoasis/vim-devicons'
 call plug#end()
