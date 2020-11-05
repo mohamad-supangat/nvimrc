@@ -1,5 +1,5 @@
 -- galaxy line status line
-require('config/galaxyline')
+-- require('config/galaxyline')
 
 -- start bufferline 
 require'bufferline'.setup()

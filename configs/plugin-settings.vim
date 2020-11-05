@@ -97,18 +97,9 @@ let g:auto_save        = 0
 let g:auto_save_silent = 1
 let g:auto_save_events = ["InsertLeave", "TextChanged", "FocusLost"]
 
-"""""""""""""""""
-" Translator    "
-"""""""""""""""""
-let g:translator_target_lang = "id"
-
 """"""""""""""""""""
 " Markdown Preview "
 """"""""""""""""""""
-" Contains CSS for markdown + page + higlight
-" let g:mkdp_markdown_css = '/home/gideon/.config/nvim/static/markdown-preview/customStyle.css' 
-" Trick plugin into hosting colors.css so we get nice themes
-" let g:mkdp_highlight_css = '/home/gideon/.cache/wal/colors.css'
 let g:mkdp_port = '3456'
 
 " tree lua
@@ -130,13 +121,6 @@ let g:lua_tree_show_icons = {
     \ 'folders': 0,
     \ 'files': 0,
     \ }
-"If 0, do not show the icons for one of 'git' 'folder' and 'files'
-"1 by default, notice that if 'files' is 1, it will only display
-"if nvim-web-devicons is installed and on your runtimepath
-
-" You can edit keybindings be defining this variable
-" You don't have to define all keys.
-" NOTE: the 'edit' key will wrap/unwrap a folder and open a file
 let g:lua_tree_bindings = {
     \ 'edit':            ['<CR>', 'o'],
     \ 'edit_vsplit':     '<C-v>',
@@ -157,5 +141,12 @@ let g:lua_tree_bindings = {
     \ 'next_git_item':   ']c',
     \ }
 
+" vim emmet
+autocmd FileType html,css,javascript,javascriptreact,vue,typescript,typescriptreact EmmetInstall
 
+" vim rainbow
+let g:rainbow_active = 1
+
+" space line
+let g:spaceline_seperate_style= 'arrow'
 
