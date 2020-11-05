@@ -68,42 +68,6 @@ vnoremap <Leader>Ar :right<CR>
 
 "***********************************************************************************
  
-" COC Keybinds {{{
-" Remap keys for gotos
-map <leader>cd <Plug>(coc-definition)
-nmap <leader>ct <Plug>(coc-type-definition)
-map <leader>ci <Plug>(coc-implementation)
-
-" Remap for rename current word
-nmap <leader>crn <Plug>(coc-rename)
-" Remap for format selected region
-xmap <leader>cf <Plug>(coc-format-selected)
-nmap <leader>cf <Plug>(coc-format-selected)
-" Fix current line
-nmap <leader>cfl  <Plug>(coc-fix-current)
-" Using CocList
-" Show all diagnostics
-nnoremap  <Leader>cdi  :<C-u>CocList diagnostics<cr>
-
-" Completion keybinds
-
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-
-" shift+tab cycles backwards 
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-" Enter to confirm completion
-inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
-" }}} end of coc keybinds
-
 " Git keybinds {{
 " Git status
 nnoremap  <Leader>gs  :Gstatus<cr>
@@ -155,8 +119,6 @@ vnoremap <leader>n :call NERDComment(1,"comment")<cr>
 " }}} end of NERDCommenter mapping
 
 " Vista {{{
-" Floating tag finder
-nnoremap  <Leader>ft  :Vista finder coc<cr>
 " Opens tagbar on right side of screen
 nmap <F8> :Vista!!<CR>
 " }}} end of vista mapping

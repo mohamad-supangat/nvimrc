@@ -111,12 +111,7 @@ let g:translator_target_lang = "id"
 " let g:mkdp_highlight_css = '/home/gideon/.cache/wal/colors.css'
 let g:mkdp_port = '3456'
 
-" start bufferline 
-lua require'bufferline'.setup()
-
-
 " tree lua
-
 let g:lua_tree_side = 'left' "left by default
 let g:lua_tree_width = 40 "30 by default
 let g:lua_tree_ignore = [ '.git', 'node_modules', '.cache' ] "empty by default
@@ -161,4 +156,6 @@ let g:lua_tree_bindings = {
     \ 'prev_git_item':   '[c',
     \ 'next_git_item':   ']c',
     \ }
+
+
 

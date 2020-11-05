@@ -15,7 +15,7 @@ set t_Co=256
 set termguicolors
 " set background=black
 colorscheme gruvbox8_hard
-" colorscheme onedark
+" colorscheme zephyr
 " let g:onedark_terminal_italics = 1
 " autocmd vimenter * colorscheme gruvbox
 

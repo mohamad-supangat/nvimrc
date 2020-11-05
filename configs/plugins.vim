@@ -31,9 +31,16 @@ Plug 'akinsho/nvim-bufferline.lua'
 " Status line writen by lua
 Plug 'glepnir/galaxyline.nvim'
 
+" Airline && airline theme {{{
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+" }}}
+
 " tree explorer
 Plug 'kyazdani42/nvim-tree.lua'
 
+" language syntax hightlight pack
+Plug 'sheerun/vim-polyglot'
 
 " Git wrapper
 Plug 'tpope/vim-fugitive'
@@ -56,7 +63,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-multiple-cursors'
 
 "" Indent guides
-Plug 'Yggdroot/indentLine'
+" Plug 'Yggdroot/indentLine'
 
 " samakan keybinding vim dengan tmux agar mudah berpindah
 Plug 'christoomey/vim-tmux-navigator'
@@ -76,7 +83,7 @@ Plug 'lifepillar/vim-gruvbox8'
 " Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
 " vim-hexcolor
-" Plug 'chrisbra/colorizer'
+Plug 'norcalli/nvim-colorizer.lua'
 
 " Easymodion
 " Plug 'easymotion/vim-easymotion'
@@ -85,23 +92,26 @@ Plug 'lifepillar/vim-gruvbox8'
 " Plug 'brooth/far.vim'
 
 " linting && fixer
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 
 " auto formater
-Plug 'chiel92/vim-autoformat'
+" Plug 'chiel92/vim-autoformat'
 
 " fuzy file search && COC
 Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
 Plug 'junegunn/fzf.vim' " needed for previews
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'antoinemadec/coc-fzf'
 
-Plug 'sheerun/vim-polyglot' " language server pack
+
+" code completetion / language server
+" Plug 'neovim/nvim-lsp'
+" Plug 'Shougo/deoplete.nvim'
+" Plug 'Shougo/deoplete-lsp'
 
 " script runnner
 " Plug 'aben20807/vim-runner'
 " simple todo 
 " Plug 'aserebryakov/vim-todo-lists'
-" Plug 'nvim-lua/completion-nvim'
 
 call plug#end()
