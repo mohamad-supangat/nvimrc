@@ -37,6 +37,9 @@ nnoremap <Leader>\| <C-w>v<C-w>l
 " Change Y to copy to end of line and behave like C
 nnoremap Y y$
 
+" map esc / exit insert mode && clear higthlight search
+map <ESC> :noh<cr>
+
 "Faster ESC. {{{
 inoremap jk <ESC>
 inoremap kj <ESC>
@@ -182,9 +185,9 @@ vnoremap <C-Y> <C-O><C-R>
 " }}}
 
 " FIXME: (broken) ctrl s to save {{{
-noremap  <C-S> :update<CR>
-vnoremap <C-S> <C-C>:update<CR>
-inoremap <C-S> <Esc>:update<CR>
+noremap  <C-S> :w<CR>
+vnoremap <C-S> <C-C>:w<CR>
+inoremap <C-S> <Esc>:w<CR>
 " }}}
 
 
@@ -245,7 +248,7 @@ noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
 
 " coc && fzf keybinds {{
 " toogle explorer
-nmap <F7> :LuaTreeToggle<CR>
+nmap <F7> :CocCommand explorer<CR>
 " toogle fzf coc
 nmap <leader>coc :CocFzfList<CR>
 nmap <leader>P :CocFzfList commands<CR>

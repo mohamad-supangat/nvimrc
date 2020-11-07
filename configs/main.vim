@@ -8,16 +8,16 @@
 "***********************************************************************************
 
 
-let &t_ZH="\e[3m"
-let &t_ZR="\e[23m"
-" Colorscheme
+" Colorscheme && set terminal to gui color for 256color
 set t_Co=256
 set termguicolors
-" set background=black
+
 colorscheme gruvbox8_hard
-" colorscheme zephyr
-" let g:onedark_terminal_italics = 1
-" autocmd vimenter * colorscheme gruvbox
+
+set cursorline!
+set lazyredraw
+set synmaxcol=128
+syntax sync minlines=256
 
 augroup specify_filetype
     autocmd!

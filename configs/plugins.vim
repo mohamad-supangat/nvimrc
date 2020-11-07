@@ -28,9 +28,6 @@ Plug 'akinsho/nvim-bufferline.lua'
 " Status line
 Plug 'hardcoreplayers/spaceline.vim'
 
-" tree explorer
-Plug 'kyazdani42/nvim-tree.lua'
-
 " language syntax hightlight pack {{{
 Plug 'sheerun/vim-polyglot'
 Plug 'Shougo/context_filetype.vim'
@@ -58,13 +55,16 @@ Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 
 " Multiple Cursors
-Plug 'terryma/vim-multiple-cursors'
+" Plug 'terryma/vim-multiple-cursors'
 
 "" Indent guides
 Plug 'Yggdroot/indentLine'
 
 " samakan keybinding vim dengan tmux agar mudah berpindah
 Plug 'christoomey/vim-tmux-navigator'
+
+" neovmux tmux in neovim 
+Plug 'https://github.com/nikvdp/neomux.git'
 
 " Tagbar
 Plug 'liuchengxu/vista.vim'
