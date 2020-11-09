@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/deve/.config/i3'
+let g:netrw_dirhist_2='/home/deve/.tmux.conf'
+let g:netrw_dirhist_1='/home/Projects/Udacoding/week2/task4_dan_task5'

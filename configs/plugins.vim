@@ -39,13 +39,18 @@ Plug 'dart-lang/dart-vim-plugin' " dart language pugin
 " }}}
 " code {{{
 
-Plug 'mattn/emmet-vim'
+" Plug 'mattn/emmet-vim'
 Plug 'luochen1990/rainbow'
 
+" git integration
 Plug 'tpope/vim-fugitive'
+Plug 'kdheepak/lazygit.nvim'
 
-Plug 'scrooloose/nerdcommenter'
+" commentar plugin nvim 
+" Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-commentary'
 
+" snippets plugin for coc-snippets
 Plug 'honza/vim-snippets'
 
 " Vim Surround

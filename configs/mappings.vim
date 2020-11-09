@@ -97,29 +97,13 @@ nnoremap  <Leader>gsc  :CocCommand git.showCommit<cr>
 " Toggle git gutter sign columns
 nnoremap  <Leader>gg  :CocCommand git.toggleGutters<cr>
 " Lazygit
-nnoremap <silent> <Leader>git :call ToggleLazyGit()<CR>
+nnoremap <silent> <Leader>git :LazyGit<CR>
 " }}
 
-" NERD Commenter {{{
-" Toggle comments in visual or normal mode
-nnoremap <leader>nc :call NERDComment(0,"toggle")<cr>
-vnoremap <leader>nc :call NERDComment(1,"toggle")<cr>
-" Toggle a sexy comment
-nnoremap <leader>ns :call NERDComment(0,"sexy")<cr>
-vnoremap <leader>ns :call NERDComment(1,"sexy")<cr>
-" append a  comment
-nnoremap <leader>na :call NERDComment(0,"append")<cr>
-vnoremap <leader>na :call NERDComment(1,"append")<cr>
-" uncomment section
-nnoremap <leader>nu :call NERDComment(0,"uncomment")<cr>
-vnoremap <leader>nu :call NERDComment(1,"uncomment")<cr>
-" invert comments
-nnoremap <leader>ni :call NERDComment(0,"invert")<cr>
-vnoremap <leader>ni :call NERDComment(1,"invert")<cr>
-" comment section
-nnoremap <leader>n :call NERDComment(0,"comment")<cr>
-vnoremap <leader>n :call NERDComment(1,"comment")<cr>
-" }}} end of NERDCommenter mapping
+" vim commenter plugin {{
+nnoremap <space>/ :Commentary<CR>
+vnoremap <space>/ :Commentary<CR>
+" }}
 
 " Vista {{{
 " Opens tagbar on right side of screen
@@ -230,6 +214,10 @@ nnoremap <Leader>bn :bnext<CR>
 nnoremap <Leader>bb :bprevious<CR>
 " nnoremap <Leader>bd :bdelete<CR> 
 nnoremap <silent> <Leader>bd :Bclose<CR>
+
+" bufferline pick function from nvim  bufferline
+nnoremap <silent> gb :BufferLinePick<CR>
+
 " }}}
 " replacing tabs with buffer
 
@@ -253,3 +241,8 @@ nmap <F7> :CocCommand explorer<CR>
 nmap <leader>coc :CocFzfList<CR>
 nmap <leader>P :CocFzfList commands<CR>
 " }}
+
+
+" nvim bufferline change by num
+" nnoremap <leader> :lua require"bufferline".go_to_buffer(num)<CR>
+

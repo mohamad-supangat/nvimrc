@@ -142,11 +142,12 @@ let g:lua_tree_bindings = {
     \ }
 
 " vim emmet
-autocmd FileType html,css,javascript,javascriptreact,vue,typescript,typescriptreact EmmetInstall
+" autocmd FileType html,css,javascript,javascriptreact,vue,typescript,typescriptreact EmmetInstall
 
 " vim rainbow
 let g:rainbow_active = 1
 
 " space line
-let g:spaceline_seperate_style= 'arrow'
-
+let g:spaceline_seperate_style= 'curve'
+let g:spaceline_colorscheme = 'one'
+" let g:spaceline_custom_vim_status = {"n": "n ","V":"V ","v":"v ","\<C-v>": "\<C-v> ","i":"i ","R":"R ","s":"s ","t":"t ","c":"\c ","!":"SE "}
