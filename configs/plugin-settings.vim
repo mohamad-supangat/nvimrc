@@ -31,9 +31,12 @@ let g:vista_sidebar_width = 50
 set completefunc=emoji#complete
 
 
-let g:unite_force_overwrite_statusline = 0
-let g:vimfiler_force_overwrite_statusline = 0
-let g:vimshell_force_overwrite_statusline = 0
+" staus line 
+let g:moonflyWithCocIndicator = 1
+
+" let g:unite_force_overwrite_statusline = 0
+" let g:vimfiler_force_overwrite_statusline = 0
+" let g:vimshell_force_overwrite_statusline = 0
 
 """""""""""""""""
 "Indent Guides  "
@@ -60,11 +63,14 @@ let g:indentLine_fileTypeExclude = [
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsMultilineClose = 0
 
-" KEY REMAPS
-" set updatetime=300
-" let g:ycm_server_python_interpreter = '/usr/bin/python3'
+
+
+" coc plugin settings {{{
+let g:coc_node_path = '/home/deve/.nvm/versions/node/v14.15.0/bin/node'
 let g:coc_snippet_next = '<TAB>'
 let g:coc_snippet_prev = '<S-TAB>'
+
+" }}}
 
 """""""""""""""""
 "Nerd Commenter "
@@ -82,10 +88,13 @@ if has('nvim') || has('gui_running')
   autocmd  FileType fzf set laststatus=0 | autocmd WinLeave <buffer> set laststatus=2                               
 endif    
 
+
+" fzf settings {{{
+let g:fzf_preview_window = []
+let $FZF_DEFAULT_COMMAND = 'rg --hidden --no-ignore --files'
+" }}}
 " change fzf default command to include hidden and ignore git
 " let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
-let $FZF_DEFAULT_COMMAND = 'rg --hidden --no-ignore --files'
-
 
 " Centered floating window for fzf
 " let g:fzf_layout = { 'window': 'call CreateCenteredFloatingWindow()' }
@@ -144,10 +153,62 @@ let g:lua_tree_bindings = {
 " vim emmet
 " autocmd FileType html,css,javascript,javascriptreact,vue,typescript,typescriptreact EmmetInstall
 
-" vim rainbow
-let g:rainbow_active = 1
-
 " space line
 let g:spaceline_seperate_style= 'curve'
 let g:spaceline_colorscheme = 'one'
 " let g:spaceline_custom_vim_status = {"n": "n ","V":"V ","v":"v ","\<C-v>": "\<C-v> ","i":"i ","R":"R ","s":"s ","t":"t ","c":"\c ","!":"SE "}
+
+
+" vim rainbow colorer {{
+let g:rainbow#max_level = 16
+let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
+
+autocmd FileType * RainbowParentheses
+" }}
+
+
+" ranger replace netrw
+let g:rnvimr_ex_enable = 1
+
+" far.vim config {{{
+" let g:far#source='rgnvim'
+let g:far#source='rg'
+" let g:far#source='vimgrep'
+" let g:far#source='ag'
+
+let g:far#window_width=60
+" Use %:p with buffer option only
+let g:far#file_mask_favorites=['%:p', '**/*.*', '**/*.js', '**/*.py', '**/*.java', '**/*.css', '**/*.html', '**/*.vim', '**/*.cpp', '**/*.c', '**/*.h', ]
+let g:far#window_min_content_width=30
+let g:far#enable_undo=1
+" }}}
+
+" floating terminal plugin {{{
+let g:floaterm_keymap_toggle = '<F1>'
+let g:floaterm_keymap_next   = '<F2>'
+let g:floaterm_keymap_prev   = '<F3>'
+let g:floaterm_keymap_new    = '<F4>'
+
+" Floaterm
+let g:floaterm_gitcommit='floaterm'
+let g:floaterm_autoinsert=1
+let g:floaterm_width=0.8
+let g:floaterm_height=0.8
+let g:floaterm_wintitle=0
+let g:floaterm_autoclose=1
+" }}}
+
+" startify {{{
+let g:startify_lists = [
+          \ { 'type': 'files',     'header': ['   Files']            },
+          \ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
+          \ { 'type': 'sessions',  'header': ['   Sessions']       },
+          \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+          \ ]
+
+let g:startify_fortune_use_unicode = 1
+let g:startify_session_persistence = 0 " auto update session
+let g:startify_enable_special = 0
+" }}}
+
+

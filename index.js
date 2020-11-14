@@ -1,5 +1,7 @@
-const haha = function () {
+// const haha = function () {
 
-}
+// }
 
-const  = functiococ
+
+
+const asd = fun

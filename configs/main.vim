@@ -59,7 +59,7 @@ set regexpengine=1        " use old regexp engine
 set hidden
 
 " Statusline Config
-" set statusline+=%F
+set statusline+=%F
 set cmdheight=1
 
 " Tab Settings
@@ -148,12 +148,12 @@ endif
 
 " Relative line numbers
 set number
-" augroup numbertoggle
-"  autocmd!
-"  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-"  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-"
-" augroup END
+ " augroup numbertoggle
+ "  autocmd!
+ "  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+ "  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+
+ " augroup END
 
 
 " Subscript digraphs for maths

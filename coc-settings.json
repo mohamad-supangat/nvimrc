@@ -5,7 +5,7 @@
   "suggest.detailField": "abbr",
   "suggest.snippetIndicator": " [SN]",
   "suggest.triggerCompletionWait": 100,
-  "suggest.echodocSupport": true,
+  "suggest.echodocSupport": false,
   "suggest.completionItemKindLabels": {
     "keyword": "\uf1de",
     "variable": "\ue79b",
@@ -58,6 +58,7 @@
   "git.changeRemovedSign.text": "▋",
   //Snippet
   "coc.preferences.snippetStatusText": "Ⓢ ",
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
   //CocList
   "list.source.files.defaultOptions": [
     "--auto-preview"
@@ -155,5 +156,41 @@
     "yaml",
     "yml",
     "vim"
-  ]
+  ],
+  "html.filetypes": [
+    "html",
+    "handlebars",
+    "jinja2.html",
+    "php"
+  ],
+  // html suggestion && validate
+  "html.suggest.html5": true,
+  "html.validate.styles": true,
+  "languageserver": {
+    "clangd": {
+      "command": "clangd",
+      "rootPatterns": [
+        "compile_flags.txt",
+        "compile_commands.json"
+      ],
+      "filetypes": [
+        "c",
+        "cc",
+        "cpp",
+        "c++",
+        "objc",
+        "objcpp"
+      ]
+    },
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": [
+        "go.mod"
+      ],
+      "disableWorkspaceFolders": true,
+      "filetypes": [
+        "go"
+      ]
+    }
+  }
 }

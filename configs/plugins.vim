@@ -26,28 +26,24 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/nvim-bufferline.lua'
 
 " Status line
-Plug 'hardcoreplayers/spaceline.vim'
+" Plug 'hardcoreplayers/spaceline.vim'
+Plug 'bluz71/vim-moonfly-statusline'
 
 " language syntax hightlight pack {{{
 Plug 'sheerun/vim-polyglot'
-Plug 'Shougo/context_filetype.vim'
-Plug 'MTDL9/vim-log-highlighting'
-Plug 'rhysd/vim-gfm-syntax'
-Plug 'plasticboy/vim-markdown'
-Plug 'rhysd/vim-gfm-syntax'
+" Plug 'Shougo/context_filetype.vim'
+" Plug 'MTDL9/vim-log-highlighting'
+" Plug 'rhysd/vim-gfm-syntax'
+" Plug 'plasticboy/vim-markdown'
+" Plug 'rhysd/vim-gfm-syntax'
 Plug 'dart-lang/dart-vim-plugin' " dart language pugin
 " }}}
-" code {{{
-
-" Plug 'mattn/emmet-vim'
-Plug 'luochen1990/rainbow'
 
 " git integration
 Plug 'tpope/vim-fugitive'
 Plug 'kdheepak/lazygit.nvim'
 
 " commentar plugin nvim 
-" Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-commentary'
 
 " snippets plugin for coc-snippets
@@ -69,36 +65,25 @@ Plug 'Yggdroot/indentLine'
 Plug 'christoomey/vim-tmux-navigator'
 
 " neovmux tmux in neovim 
-Plug 'https://github.com/nikvdp/neomux.git'
+" Plug 'https://github.com/nikvdp/neomux.git'
 
 " Tagbar
 Plug 'liuchengxu/vista.vim'
 
-
-" Emoji support
-" Plug 'junegunn/vim-emoji'
 
 " color scheme collection {{{
 Plug 'lifepillar/vim-gruvbox8'
 " }}}
 
 " Markdown Preview
-" Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
-" vim-hexcolor
+" colorizer and rainbow tag
 Plug 'norcalli/nvim-colorizer.lua'
-
-" Easymodion
-" Plug 'easymotion/vim-easymotion'
+Plug 'junegunn/rainbow_parentheses.vim'
 
 " ctrlsf search  in all file in folder
-" Plug 'brooth/far.vim'
-
-" linting && fixer
-" Plug 'dense-analysis/ale'
-
-" auto formater
-" Plug 'chiel92/vim-autoformat'
+Plug 'ChristianChiarulli/far.vim'
 
 " fuzy file search && COC
 Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
@@ -106,7 +91,12 @@ Plug 'junegunn/fzf.vim' " needed for previews
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'antoinemadec/coc-fzf'
 
-" simple todo 
-" Plug 'aserebryakov/vim-todo-lists'
+" rager intergration
+" Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
+" neovim floatingTerminal plugin
+Plug 'voldikss/vim-floaterm'
+
+" dashoard && session management
+Plug 'mhinz/vim-startify'
 call plug#end()
