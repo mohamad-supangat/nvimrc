@@ -10,7 +10,7 @@
 
 " Install vim-plugged if not already installed
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
-    silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+    !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
         \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
@@ -31,12 +31,9 @@ Plug 'bluz71/vim-moonfly-statusline'
 
 " language syntax hightlight pack {{{
 Plug 'sheerun/vim-polyglot'
-" Plug 'Shougo/context_filetype.vim'
-" Plug 'MTDL9/vim-log-highlighting'
-" Plug 'rhysd/vim-gfm-syntax'
-" Plug 'plasticboy/vim-markdown'
-" Plug 'rhysd/vim-gfm-syntax'
 Plug 'dart-lang/dart-vim-plugin' " dart language pugin
+" Plug 'posva/vim-vue' " vue syntax hightlight
+Plug 'cakebaker/scss-syntax.vim' " scss && sass syntax hightlight
 " }}}
 
 " git integration
@@ -53,7 +50,7 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 
 " Auto pairs
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 
 " Multiple Cursors
 " Plug 'terryma/vim-multiple-cursors'
@@ -85,9 +82,11 @@ Plug 'junegunn/rainbow_parentheses.vim'
 " ctrlsf search  in all file in folder
 Plug 'ChristianChiarulli/far.vim'
 
+
 " fuzy file search && COC
 Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
 Plug 'junegunn/fzf.vim' " needed for previews
+
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'antoinemadec/coc-fzf'
 

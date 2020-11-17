@@ -28,11 +28,11 @@ let g:vista_sidebar_width = 50
 """"""""""
 " Emoji  "
 """"""""""
-set completefunc=emoji#complete
+" set completefunc=emoji#complete
 
 
 " staus line 
-let g:moonflyWithCocIndicator = 1
+" let g:moonflyWithCocIndicator = 1
 
 " let g:unite_force_overwrite_statusline = 0
 " let g:vimfiler_force_overwrite_statusline = 0
@@ -69,8 +69,20 @@ let g:AutoPairsMultilineClose = 0
 let g:coc_node_path = '/home/deve/.nvm/versions/node/v14.15.0/bin/node'
 let g:coc_snippet_next = '<TAB>'
 let g:coc_snippet_prev = '<S-TAB>'
-
 " }}}
+
+" neovim language server clicne
+let g:LanguageClient_serverCommands = {
+    \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+    \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
+    \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
+    \ 'python': ['/usr/local/bin/pyls'],
+    \ 'ruby': ['~/.rbenv/shims/solargraph', 'stdio'],
+    \ }
+
+nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
 """""""""""""""""
 "Nerd Commenter "
@@ -210,5 +222,4 @@ let g:startify_fortune_use_unicode = 1
 let g:startify_session_persistence = 0 " auto update session
 let g:startify_enable_special = 0
 " }}}
-
 

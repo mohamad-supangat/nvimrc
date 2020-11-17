@@ -14,6 +14,9 @@ set termguicolors
 
 colorscheme gruvbox8_hard
 
+" set guifont='Iosevka\ 10'
+" set guifont=Iosevka\ Term:h20
+
 set cursorline!
 set lazyredraw
 set synmaxcol=128
