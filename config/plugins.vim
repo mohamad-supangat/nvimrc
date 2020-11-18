@@ -37,9 +37,9 @@ if dein#load_state('~/.cache/dein')
   " call dein#add('hrsh7th/vim-vsnip-integ')
   " call dein#add('nvim-lua/completion-nvim')
   
-  call dein#add('mhinz/vim-startify') " start page for vim 
+  " call dein#add('mhinz/vim-startify') " start page for vim 
 
-  call dein#add('voldikss/vim-floaterm') " floating terminal
+  " call dein#add('voldikss/vim-floaterm') " floating terminal
   " call dein#add('micalexander/dein-fzf.vim') " dein gui with fzf
   call dein#add('rbgrouleff/bclose.vim') " closing buffer without pane
 
