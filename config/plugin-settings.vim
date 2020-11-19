@@ -78,4 +78,7 @@ set shortmess+=c
 
 " }}}
 
-let g:vim_vue_plugin_load_full_syntax = 1 " enable vue for full syntax
+" let g:vim_vue_plugin_load_full_syntax = 1 " enable vue for full syntax
+let g:LanguageClient_serverCommands = {
+    \ 'vue': ['vls']
+    \ }

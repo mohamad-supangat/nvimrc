@@ -132,9 +132,9 @@ map <C-p> :Files<CR>
 " Tabs {{{
 nnoremap <C-t>  :enew<CR>
 inoremap <C-t>  <Esc>:enew<CR>i
-" noremap <C-J>  :bprevious<CR>
+nnoremap <C-PageUp>  :bprevious<CR>
 " inoremap <C-J>  <Esc>:bprevious<CR>i
-" nnoremap <C-K> bnext<CR>
+nnoremap <C-PageDown> :bnext<CR>
 " inoremap <C-K>  <Esc>:bnext<CR>i
 
 nnoremap <Leader>bn :bnext<CR>
@@ -142,8 +142,8 @@ nnoremap <Leader>bb :bprevious<CR>
 " nnoremap <Leader>bd :bdelete<CR> 
 nnoremap <silent> <Leader>bd :Bclose<CR>
 
-" bufferline pick function from nvim  bufferline
-nnoremap <silent> gb :BufferLinePick<CR>
+" bufferli pick function from nvim  bufferli
+nnoremap <silent> gb :BufferLinePic<CR>
 
 " }}}
 " replacing tabs with buffer
