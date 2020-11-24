@@ -44,17 +44,12 @@ let g:floaterm_keymap_next   = '<F2>'
 let g:floaterm_keymap_prev   = '<F3>'
 let g:floaterm_keymap_new    = '<F4>'
 
-" Floaterm
 let g:floaterm_gitcommit='floaterm'
 let g:floaterm_autoinsert=1
 let g:floaterm_width=0.8
 let g:floaterm_height=0.8
 let g:floaterm_wintitle=0
 let g:floaterm_autoclose=1
-" }}}
-
-
-" bufferline lua {{{
 " }}}
 
 
@@ -74,11 +69,90 @@ set shortmess+=c
 " completion nvim {{{
 " lua require'nvim_lsp'.pyls.setup{on_attach=require'completion'.on_attach}
 " let g:completion_enable_snippet = 'vim-vsnip'
-
-
 " }}}
 
 " let g:vim_vue_plugin_load_full_syntax = 1 " enable vue for full syntax
 let g:LanguageClient_serverCommands = {
     \ 'vue': ['vls']
     \ }
+
+let g:rainbow_active = 1 " active rainbow in every vim
+
+
+" auto formater.vim config  {{{
+" let g:formatters_vue = ['eslint_local', 'stylelint']
+" let g:run_all_formatters_vue = 1
+" }}}
+
+" lightline config {{{
+" let g:lightline.enable.tabline = 0
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'enable': {
+      \     'tabline': 0
+      \   },
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ], [ 'gitbranch', 'readonly', 'absolutepath', 'modified' ] ],
+      \   },
+      \ 'separator': {
+      \     'left': '', 'right': ''
+      \   },
+      \   'subseparator': {
+      \   'left': '\u2502', 'right': '\u2502'
+      \   },
+      \ 'mode_map': {
+      \     'n'      : ' N0RMAL',
+      \     'i'      : ' INSERT',
+      \     'R'      : ' REPLACE',
+      \     'v'      : ' VISUAL',
+      \     'V'      : ' V-LINE',
+      \     "\<C-v>" : ' V-BL0CK',
+      \     'c'      : ' COMMAND',
+      \     's'      : ' SELECT',
+      \     'S'      : ' S-LINE',
+      \     "\<C-s>" : ' S-BL0CK',
+      \     't'      : ' TERMINAL',
+      \   }
+      \ }
+
+"}}}
+
+
+
+" auto close tag {{{
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.vue'
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
+let g:closetag_filetypes = 'html,xhtml,phtml'
+let g:closetag_xhtml_filetypes = 'xhtml,jsx'
+let g:closetag_emptyTags_caseSensitive = 1
+let g:closetag_regions = {
+    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
+    \ 'javascript.jsx': 'jsxRegion',
+    \ }
+" let g:closetag_shortcut = '>'
+" let g:closetag_close_shortcut = '<leader> >'
+" }}}
+
+" startify config {{{
+let g:startify_lists = [
+      \ { 'type': 'sessions',  'header': ['   Sessions']       },
+      \ { 'type': 'files',     'header': ['   MRU']            },
+      \ { 'type': 'dir',       'header': ['   MRU '. getcwd()] },
+      \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+      \ { 'type': 'commands',  'header': ['   Commands']       },
+      \ ]
+
+" }}}
+
+
+" coc configuration {{{
+
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Add `:Format` command to format current buffer.
+command! -nargs=0 Format :call CocAction('format')
+
+" Add `:Fold` command to fold current buffer.
+command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+" }}}

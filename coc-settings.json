@@ -1,9 +1,21 @@
 {
+  // vetur for vue helper
   "vetur.dev.vlsPath": "/home/deve/.config/nvm/14.15.0/lib/node_modules/vls",
+  // explorer config 
+  "explorer.icon.expanded": "▾",
+  "explorer.icon.collapsed": "▸",
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.quitOnOpen": true,
+  "explorer.floating.width": -20,
+  "explorer.floating.height": -10,
+  "explorer.openAction.strategy": "sourceWindow",
+
+  // pretier auto format on save 
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "php",
-    "vue",
-    "markdown"
+    "markdown",
+    "dart"
   ]
 }
