@@ -53,7 +53,18 @@ let g:floaterm_autoclose=1
 " }}}
 
 
-" complettion nvim  {{{
+" startify config  {{{
+let g:startify_lists = [
+          \ { 'type': 'sessions',  'header': ['   Sessions']       },
+          \ { 'type': 'files',     'header': ['   MRU']            },
+          \ { 'type': 'dir',       'header': ['   MRU '. getcwd()] },
+          \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+          \ { 'type': 'commands',  'header': ['   Commands']       },
+          \ ]
+" }}}
+
+
+" coc vim   {{{
 " Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
@@ -79,10 +90,6 @@ let g:LanguageClient_serverCommands = {
 let g:rainbow_active = 1 " active rainbow in every vim
 
 
-" auto formater.vim config  {{{
-" let g:formatters_vue = ['eslint_local', 'stylelint']
-" let g:run_all_formatters_vue = 1
-" }}}
 
 " lightline config {{{
 " let g:lightline.enable.tabline = 0
@@ -117,32 +124,6 @@ let g:lightline = {
 
 "}}}
 
-
-
-" auto close tag {{{
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.vue'
-let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
-let g:closetag_filetypes = 'html,xhtml,phtml'
-let g:closetag_xhtml_filetypes = 'xhtml,jsx'
-let g:closetag_emptyTags_caseSensitive = 1
-let g:closetag_regions = {
-    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
-    \ 'javascript.jsx': 'jsxRegion',
-    \ }
-" let g:closetag_shortcut = '>'
-" let g:closetag_close_shortcut = '<leader> >'
-" }}}
-
-" startify config {{{
-let g:startify_lists = [
-      \ { 'type': 'sessions',  'header': ['   Sessions']       },
-      \ { 'type': 'files',     'header': ['   MRU']            },
-      \ { 'type': 'dir',       'header': ['   MRU '. getcwd()] },
-      \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
-      \ { 'type': 'commands',  'header': ['   Commands']       },
-      \ ]
-
-" }}}
 
 
 " coc configuration {{{
