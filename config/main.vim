@@ -9,6 +9,10 @@ if exists('+termguicolors')
 endif
 colorscheme gruvbox
 
+if !has('nvim')
+  let &t_ZH="\e[3m"
+  let &t_ZR="\e[23m"
+endif
 
 set cursorline!
 set lazyredraw
@@ -49,7 +53,7 @@ set hidden
 
 " Statusline Config
 set statusline+=%F
-set cmdheight=1
+set cmdheight=2
 
 " Tab Settings
 set expandtab
@@ -93,19 +97,13 @@ set wrap
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=4000
+set updatetime=300
 
 " Don't pass messages to |ins-completion-menu.
 set shortmess+=c
 
 " Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  se signcolumn=yes
-endif
+set signcolumn=yes
 
 " Turns on detection for fyletypes, indentation files and plugin files
 filetype plugin indent on
@@ -133,12 +131,13 @@ endif
 
 " Relative line numbers
 set number
- " augroup numbertoggle
- "  autocmd!
- "  autocmd BufEn,FocusGained,InsertLeave * set relativenumber
- "  autocmd BufLe,FocusLost,InsertEnter   * set norelativenumber
+set relativenumber
 
- " augroup END
+" augroup numbertoggle
+"   autocmd!
+"   autocmd bufen,focusgained,insertleave * set relativenumber
+"   autocmd bufle,focuslost,insertenter   * set norelativenumber
+" augroup end
 
 " disable vim backup
 set nobackup
