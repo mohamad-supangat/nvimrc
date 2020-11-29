@@ -39,5 +39,14 @@
     "markdown",
     "dart",
     "json"
-  ]
+  ],
+  // eslint
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.autoFix": true,
+  "eslint.autoFixOnSave": true
 }
