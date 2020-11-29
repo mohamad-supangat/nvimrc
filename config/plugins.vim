@@ -11,8 +11,9 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'gruvbox-community/gruvbox' " gruvbox color scheme
   Plug 'tjdevries/colorbuddy.nvim' " color scheme maker
   Plug 'rhysd/accelerated-jk' "navigate faster with jk
-  " Plug 'Yggdroot/indentLine' " show indentline
+  Plug 'Yggdroot/indentLine' " show indentline
   Plug 'tpope/vim-commentary' " auto commennt 
+  Plug 'AndrewRadev/tagalong.vim' " tag helper
   Plug 'kdheepak/lazygit.nvim' " lazy git nvim 
   Plug 'norcalli/nvim-colorizer.lua' " show color of code
   " Plug 'junegunn/rainbow_parentheses.vim' " show rainbow color in bracket
@@ -43,6 +44,8 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'sheerun/vim-polyglot' " solid syntax hightlight for  vim 
   Plug 'hail2u/vim-css3-syntax' " css 
   Plug 'neoclide/coc-vetur' " vue language server from coc
+  Plug 'tweekmonster/django-plus.vim' " for django support
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " for markdown preview
   " }}}
  
   Plug 'edkolev/tmuxline.vim'

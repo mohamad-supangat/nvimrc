@@ -1,7 +1,7 @@
 {
   // vetur for vue helper
   "vetur.dev.vlsPath": "/home/deve/.config/nvm/14.15.0/lib/node_modules/vls",
-  // explorer config 
+  // explorer config
   "explorer.icon.expanded": "▾",
   "explorer.icon.collapsed": "▸",
   "explorer.width": 30,
@@ -10,12 +10,34 @@
   "explorer.floating.width": -20,
   "explorer.floating.height": -10,
   "explorer.openAction.strategy": "sourceWindow",
-
-  // pretier auto format on save 
+  //diagnostic
+  "diagnostic.errorSign": "●",
+  "diagnostic.warningSign": "●",
+  "diagnostic.infoSign": "●",
+  "diagnostic.displayByAle": false,
+  "diagnostic.refreshOnInsertMode": true,
+  //git
+  "git.enableGutters": true,
+  "git.branchCharacter": "\uf418",
+  "git.addGBlameToBufferVar": true,
+  "git.addGBlameToVirtualText": true,
+  "git.virtualTextPrefix": " ❯❯❯ ",
+  "git.addedSign.hlGroup": "GitGutterAdd",
+  "git.changedSign.hlGroup": "GitGutterChange",
+  "git.removedSign.hlGroup": "GitGutterDelete",
+  "git.topRemovedSign.hlGroup": "GitGutterDelete",
+  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
+  "git.addedSign.text": "▋",
+  "git.changedSign.text": "▋",
+  "git.removedSign.text": "▋",
+  "git.topRemovedSign.text": "▔",
+  "git.changeRemovedSign.text": "▋",
+  // pretier auto format on save
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "php",
     "markdown",
-    "dart"
+    "dart",
+    "json"
   ]
 }
