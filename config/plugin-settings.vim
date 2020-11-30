@@ -107,19 +107,6 @@ let g:lightline = {
       \   'subseparator': {
       \   'left': '\u2502', 'right': '\u2502'
       \   },
-      \ 'mode_map': {
-      \     'n'      : ' N0RMAL',
-      \     'i'      : ' INSERT',
-      \     'R'      : ' REPLACE',
-      \     'v'      : ' VISUAL',
-      \     'V'      : ' V-LINE',
-      \     "\<C-v>" : ' V-BL0CK',
-      \     'c'      : ' COMMAND',
-      \     's'      : ' SELECT',
-      \     'S'      : ' S-LINE',
-      \     "\<C-s>" : ' S-BL0CK',
-      \     't'      : ' TERMINAL',
-      \   }
       \ }
 
 "}}}

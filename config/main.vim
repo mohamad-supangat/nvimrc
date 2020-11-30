@@ -131,7 +131,7 @@ endif
 
 " Relative line numbers
 set number
-set relativenumber
+" set relativenumber
 
 " augroup numbertoggle
 "   autocmd!
