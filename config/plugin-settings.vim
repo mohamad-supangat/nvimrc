@@ -92,23 +92,20 @@ let g:rainbow_active = 1 " active rainbow in every vim
 
 
 " lightline config {{{
-" let g:lightline.enable.tabline = 0
-
-" let g:lightline#bufferline#unnamed = "[NO NAME]"
-" let g:lightline#bufferline#filename_modifier= ":."
-" let g:lightline#bufferline#more_buffers = "..."
-" let g:lightline#bufferline#modified = " ●"
-" let g:lightline#bufferline#read_only = " "
-" let g:lightline#bufferline#shorten_path = 1
-" let g:lightline#bufferline#show_number = 1
-" let g:lightline#bufferline#enable_devicons = 1
-" let g:lightline#bufferline#unicode_symbols = 1
+let g:lightline#bufferline#unnamed = "[NO NAME]"
+let g:lightline#bufferline#filename_modifier= ":."
+let g:lightline#bufferline#more_buffers = "..."
+let g:lightline#bufferline#modified = " ●"
+let g:lightline#bufferline#read_only = " "
+let g:lightline#bufferline#shorten_path = 1
+let g:lightline#bufferline#show_number = 1
+let g:lightline#bufferline#enable_devicons = 1
+let g:lightline#bufferline#unicode_symbols = 1
 
 set showtabline=2  " Show tabline
 set guioptions-=e  " Don't use GUI tabline
 
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'gitbranch', 'readonly', 'absolutepath', 'modified' ] ],
       \   },

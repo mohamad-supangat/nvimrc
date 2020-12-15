@@ -10,7 +10,12 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 
   Plug 'christoomey/vim-tmux-navigator' " tmux navigation integration
+  
   Plug 'gruvbox-community/gruvbox' " gruvbox color scheme
+  " Plug 'pineapplegiant/spaceduck'
+  Plug 'rakr/vim-one'
+
+
   " Plug 'tjdevries/colorbuddy.nvim' " color scheme maker
   Plug 'rhysd/accelerated-jk' "navigate faster with jk
   Plug 'Yggdroot/indentLine' " show indentline
