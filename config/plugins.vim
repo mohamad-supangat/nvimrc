@@ -4,20 +4,24 @@ endif
 " Add the dein installation directory into runtimepath
 call plug#begin('~/.local/share/nvim/plugged')
   Plug 'kyazdani42/nvim-web-devicons' " neovim web dev icon
-  Plug 'akinsho/nvim-bufferline.lua' " bufferline for nvim 
+  " Plug 'akinsho/nvim-bufferline.lua' " bufferline for nvim 
   Plug 'itchyny/lightline.vim' " statusline
+  Plug 'mengelbrecht/lightline-bufferline' " buffer status tab
+
 
   Plug 'christoomey/vim-tmux-navigator' " tmux navigation integration
   Plug 'gruvbox-community/gruvbox' " gruvbox color scheme
-  Plug 'tjdevries/colorbuddy.nvim' " color scheme maker
+  " Plug 'tjdevries/colorbuddy.nvim' " color scheme maker
   Plug 'rhysd/accelerated-jk' "navigate faster with jk
   Plug 'Yggdroot/indentLine' " show indentline
   Plug 'tpope/vim-commentary' " auto commennt 
   Plug 'AndrewRadev/tagalong.vim' " tag helper
   Plug 'kdheepak/lazygit.nvim' " lazy git nvim 
-  Plug 'norcalli/nvim-colorizer.lua' " show color of code
+  " Plug 'norcalli/nvim-colorizer.lua' " show color of code
   " Plug 'junegunn/rainbow_parentheses.vim' " show rainbow color in bracket
   Plug 'luochen1990/rainbow' " rinbow bracket
+  Plug 'editorconfig/editorconfig-vim' " editorconfig for vim
+
   
   Plug 'ChristianChiarulli/far.vim' " find && replace in vim
   
