@@ -1,16 +1,16 @@
 " indent line {{{
 let g:indentLine_char = '▏'
-" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 let g:indent_guides_auto_colors = 1
 let g:indentLine_fileTypeExclude = [
-      \'defx',
-      \'markdown',
-      \'denite',
-      \'startify',
-      \'tagbar',
-      \'vista_kind',
-      \'vista'
+    \'defx',
+    \'markdown',
+    \'denite',
+    \'startify',
+    \'tagbar',
+    \'vista_kind',
+    \'vista'
       \]
 " }}}
 
@@ -109,27 +109,13 @@ let g:lightline = {
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'gitbranch', 'readonly', 'absolutepath', 'modified' ] ],
       \   },
-      \ 'separator': {
-      \     'left': '', 'right': ''
-      \   },
-      \   'subseparator': {
-      \   'left': '\u2502', 'right': '\u2502'
-      \   },
       \ 'tabline': {
       \   'left': [ ['buffers'] ],
       \   'right': [ ['close'] ]
       \ },
       \ }
-let g:lightline.separator = {
-\   'left': '', 'right': ''
-\}
-let g:lightline.subseparator = {
-\   'left': '', 'right': ''
-\}
-let g:lightline.tabline = {
-\   'left': [['buffers']],
-\   'right': [['close']]
-\}
+
+
 let g:lightline.component_expand = {
 \   'buffers': 'lightline#bufferline#buffers'
 \}

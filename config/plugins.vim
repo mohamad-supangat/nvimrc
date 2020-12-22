@@ -19,6 +19,8 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Plug 'tjdevries/colorbuddy.nvim' " color scheme maker
   Plug 'rhysd/accelerated-jk' "navigate faster with jk
   Plug 'Yggdroot/indentLine' " show indentline
+  " Plug 'lukas-reineke/indent-blankline.nvim' " indentLine
+ 
   Plug 'tpope/vim-commentary' " auto commennt 
   Plug 'AndrewRadev/tagalong.vim' " tag helper
   Plug 'kdheepak/lazygit.nvim' " lazy git nvim 
