@@ -16,7 +16,7 @@ endif
 
 set cursorline!
 set lazyredraw
-set synmaxcol=128
+set synmaxcol=9999
 syntax sync minlines=256
 
 " Longer leader key timeout
@@ -53,7 +53,7 @@ set hidden
 
 " Statusline Config
 set statusline+=%F
-set cmdheight=2
+set cmdheight=1
 
 " Tab Settings
 set expandtab

@@ -32,7 +32,7 @@
   "git.removedSign.text": "▋",
   "git.topRemovedSign.text": "▔",
   "git.changeRemovedSign.text": "▋",
-  // pretier auto format on save
+  // pretier
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "php",
@@ -40,6 +40,8 @@
     "dart",
     "json"
   ],
+  "prettier.eslintIntegration": true,
+  "prettier.stylelintIntegration": true,
   // eslint
   "eslint.filetypes": [
     "javascript",

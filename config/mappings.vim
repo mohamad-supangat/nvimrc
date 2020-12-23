@@ -56,7 +56,7 @@ vnoremap <Leader>Ar :right<CR>
 " }}}
 
 " Lazygit
-nnoremap <silent> <Leader>git :FloatermNew lazygit<CR>
+nnoremap <silent> <Leader>git :call ToggleLazyGit()<CR>
 " }}
 
 " vim commenter plugin {{
