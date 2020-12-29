@@ -8,6 +8,7 @@ if exists('+termguicolors')
   set termguicolors
 endif
 colorscheme gruvbox
+let g:gruvbox_italic=1
 
 if !has('nvim')
   let &t_ZH="\e[3m"

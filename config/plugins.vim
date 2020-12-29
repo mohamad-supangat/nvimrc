@@ -15,7 +15,6 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Plug 'pineapplegiant/spaceduck'
   Plug 'rakr/vim-one'
 
-
   " Plug 'tjdevries/colorbuddy.nvim' " color scheme maker
   Plug 'rhysd/accelerated-jk' "navigate faster with jk
   Plug 'Yggdroot/indentLine' " show indentline
@@ -53,7 +52,13 @@ call plug#begin('~/.local/share/nvim/plugged')
 
   " language && syntax hightlight {{{
   Plug 'sheerun/vim-polyglot' " solid syntax hightlight for  vim 
-  Plug 'hail2u/vim-css3-syntax' " css 
+  Plug 'leafOfTree/vim-vue-plugin' " best vue integration
+  Plug 'leafOfTree/vim-matchtag'
+  Plug 'alvan/vim-closetag' " auto close html tag
+
+
+
+  " Plug 'hail2u/vim-css3-syntax' " css 
   Plug 'neoclide/coc-vetur' " vue language server from coc
   Plug 'tweekmonster/django-plus.vim' " for django support
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " for markdown preview
