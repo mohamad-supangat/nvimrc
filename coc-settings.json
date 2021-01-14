@@ -19,8 +19,8 @@
   //git
   "git.enableGutters": true,
   "git.branchCharacter": "\uf418",
-  "git.addGBlameToBufferVar": true,
-  "git.addGBlameToVirtualText": true,
+  "git.addGBlameToBufferVar": false,
+  "git.addGBlameToVirtualText": false,
   "git.virtualTextPrefix": " ❯❯❯ ",
   "git.addedSign.hlGroup": "GitGutterAdd",
   "git.changedSign.hlGroup": "GitGutterChange",
@@ -33,13 +33,7 @@
   "git.topRemovedSign.text": "▔",
   "git.changeRemovedSign.text": "▋",
   // pretier
-  "coc.preferences.formatOnSaveFiletypes": [
-    "css",
-    "php",
-    "markdown",
-    "dart",
-    "json"
-  ],
+  "coc.preferences.formatOnSaveFiletypes": ["php", "markdown", "dart", "json"],
   "prettier.eslintIntegration": true,
   "prettier.stylelintIntegration": true,
   // eslint
@@ -51,5 +45,9 @@
   ],
   "eslint.autoFix": true,
   "eslint.autoFixOnSave": true,
-  "coc.preferences.extensionUpdateCheck": "never"
+  "coc.preferences.extensionUpdateCheck": "never",
+  // emmet
+  "emmet.includeLanguages": {
+    "blade": "html"
+  }
 }

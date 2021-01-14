@@ -53,7 +53,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   " language && syntax hightlight {{{
   Plug 'sheerun/vim-polyglot' " solid syntax hightlight for  vim 
   Plug 'leafOfTree/vim-vue-plugin' " best vue integration
-  Plug 'leafOfTree/vim-matchtag'
+  " Plug 'leafOfTree/vim-matchtag'
   Plug 'alvan/vim-closetag' " auto close html tag
 
 
@@ -65,6 +65,6 @@ call plug#begin('~/.local/share/nvim/plugged')
   " }}}
  
   Plug 'edkolev/tmuxline.vim'
-
+  " Plug 'skanehira/docker.vim'
 call plug#end()
  

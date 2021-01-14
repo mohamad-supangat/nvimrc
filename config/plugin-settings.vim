@@ -144,8 +144,8 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 " }}}
 
 
-let g:tagalong_additional_filetypes = ['vue'] " tagalong aditional fileype
-let g:closetag_filetypes = 'html,xhtml,phtml,vue' " add vue to auto close html tag
+let g:tagalong_additional_filetypes = ['vue' , 'blade'] " tagalong aditional fileype
+let g:closetag_filetypes = 'html,xhtml,phtml,vue,blade' " add vue to auto close html tag
 
 " let g:vim_vue_plugin_load_full_syntax = 1 " load full plugin in 
 " some vue plugin config {{{
