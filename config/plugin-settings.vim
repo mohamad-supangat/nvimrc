@@ -143,15 +143,19 @@ command! -nargs=0 Format :call CocAction('format')
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 " }}}
 
-
+" tagalong and close tag config
 let g:tagalong_additional_filetypes = ['vue' , 'blade'] " tagalong aditional fileype
 let g:closetag_filetypes = 'html,xhtml,phtml,vue,blade' " add vue to auto close html tag
 
-" let g:vim_vue_plugin_load_full_syntax = 1 " load full plugin in 
+
 " some vue plugin config {{{
 let g:vim_vue_plugin_use_sass = 1
 " let g:vim_vue_plugin_highlight_vue_keyword = 1
 let g:vim_vue_plugin_highlight_vue_attr	= 1
 let g:vim_vue_plugin_has_init_indent = 1
+
+
+" auto format .vue file on save / write
+autocmd BufWritePost *.vue :CocCommand prettier.formatFile
 " }}}
 
