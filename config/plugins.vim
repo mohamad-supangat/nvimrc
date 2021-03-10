@@ -11,7 +11,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
   Plug 'christoomey/vim-tmux-navigator' " tmux navigation integration
   
-  Plug 'gruvbox-community/gruvbox' " gruvbox color scheme
+  Plug 'sainnhe/gruvbox-material'
   " Plug 'pineapplegiant/spaceduck'
   Plug 'rakr/vim-one'
 
@@ -22,14 +22,12 @@ call plug#begin('~/.local/share/nvim/plugged')
  
   Plug 'tpope/vim-commentary' " auto commennt 
   Plug 'AndrewRadev/tagalong.vim' " tag helper
-  Plug 'kdheepak/lazygit.nvim' " lazy git nvim 
+  " Plug 'kdheepak/lazygit.nvim' " lazy git nvim 
   " Plug 'norcalli/nvim-colorizer.lua' " show color of code
   " Plug 'junegunn/rainbow_parentheses.vim' " show rainbow color in bracket
   Plug 'luochen1990/rainbow' " rinbow bracket
   Plug 'editorconfig/editorconfig-vim' " editorconfig for vim
 
-  
-  Plug 'ChristianChiarulli/far.vim' " find && replace in vim
   
   Plug 'junegunn/fzf', { 'build': './install --all', 'merged': 0 } " gui preview
   Plug 'junegunn/fzf.vim', { 'depends': 'fzf'}

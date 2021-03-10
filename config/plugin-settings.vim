@@ -15,8 +15,8 @@ let g:indentLine_fileTypeExclude = [
 " }}}
 
 " fzf settings {{{
-let g:fzf_preview_window = []
-let $FZF_DEFAULT_COMMAND = 'rg --hidden --no-ignore --files'
+" let g:fzf_preview_window = []
+" let $FZF_DEFAULT_COMMAND = 'rg --hidden --no-ignore --files'
 " Hide status bar while using fzf commands                                                                          
 if has('nvim') || has('gui_running')                                                                                
   autocmd! FileType fzf                                                                                             
@@ -24,19 +24,6 @@ if has('nvim') || has('gui_running')
 endif
 " }}}
 
-
-" far.vim config {{{
-" let g:far#source='rgnvim'
-let g:far#source='rg'
-" let g:far#source='vimgrep'
-" let g:far#source='ag'
-
-let g:far#window_width=60
-" Use %:p with buffer option only
-let g:far#file_mask_favorites=['%:p', '**/*.*', '**/*.js', '**/*.py', '**/*.java', '**/*.css', '**/*.html', '**/*.vim', '**/*.cpp', '**/*.c', '**/*.h', ]
-let g:far#window_min_content_width=30
-let g:far#enable_undo=1
-" }}}
 
 " floating terminal plugin {{{
 let g:floaterm_keymap_toggle = '<F1>'
@@ -109,6 +96,7 @@ set showtabline=2  " Show tabline
 set guioptions-=e  " Don't use GUI tabline
 
 let g:lightline = {
+      \ 'colorscheme': 'gruvbox_material',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'gitbranch', 'readonly', 'absolutepath', 'modified' ] ],
       \   },

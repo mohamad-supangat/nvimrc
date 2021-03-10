@@ -7,8 +7,16 @@ if exists('+termguicolors')
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
-colorscheme gruvbox
-let g:gruvbox_italic=1
+
+let g:gruvbox_material_background = 'hard'
+let g:gruvbox_material_enable_italic = 1
+" let g:gruvbox_material_disable_italic_comment = 1
+let g:gruvbox_material_visual = 'red background'
+let g:gruvbox_material_menu_selection_background = 'green'
+let g:gruvbox_material_palette = 'mix'
+
+set background=dark
+colorscheme gruvbox-material
 
 if !has('nvim')
   let &t_ZH="\e[3m"
