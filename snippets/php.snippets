@@ -1,0 +1,8 @@
+snippet db:transaction
+	\DB::beginTransaction();
+	try {
+		\DB::commit();
+	} catch (\Exception $e) {
+		\DB::rollback();
+	}
+

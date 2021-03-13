@@ -5,12 +5,10 @@ endif
 call plug#begin('~/.local/share/nvim/plugged')
   Plug 'kyazdani42/nvim-web-devicons' " neovim web dev icon
   " Plug 'akinsho/nvim-bufferline.lua' " bufferline for nvim 
-  Plug 'itchyny/lightline.vim' " statusline
-  Plug 'mengelbrecht/lightline-bufferline' " buffer status tab
-
-
-  Plug 'christoomey/vim-tmux-navigator' " tmux navigation integration
   
+  Plug 'christoomey/vim-tmux-navigator' " tmux navigation integration
+  Plug 'vim-airline/vim-airline' " airline plugin
+
   Plug 'sainnhe/gruvbox-material'
   " Plug 'pineapplegiant/spaceduck'
   Plug 'rakr/vim-one'
@@ -62,7 +60,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " for markdown preview
   " }}}
  
-  Plug 'edkolev/tmuxline.vim'
+  " Plug 'edkolev/tmuxline.vim'
   " Plug 'skanehira/docker.vim'
 call plug#end()
  
