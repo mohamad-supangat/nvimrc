@@ -10,6 +10,7 @@
   "explorer.floating.width": -20,
   "explorer.floating.height": -10,
   "explorer.openAction.strategy": "sourceWindow",
+  "explorer.file.showHiddenFiles": true,
   //diagnostic
   "diagnostic.errorSign": "●",
   "diagnostic.warningSign": "●",
