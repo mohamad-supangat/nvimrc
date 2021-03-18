@@ -3,6 +3,8 @@ if &compatible
 endif
 " Add the dein installation directory into runtimepath
 call plug#begin('~/.local/share/nvim/plugged')
+  Plug 'KabbAmine/zeavim.vim'
+
   Plug 'kyazdani42/nvim-web-devicons' " neovim web dev icon
   " Plug 'akinsho/nvim-bufferline.lua' " bufferline for nvim 
   
@@ -49,7 +51,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   " language && syntax hightlight {{{
   Plug 'sheerun/vim-polyglot' " solid syntax hightlight for  vim 
   Plug 'leafOfTree/vim-vue-plugin' " best vue integration
-  Plug 'leafOfTree/vim-matchtag'
+  " Plug 'leafOfTree/vim-matchtag'
   Plug 'alvan/vim-closetag' " auto close html tag
 
 
