@@ -118,3 +118,5 @@ let g:vim_vue_plugin_has_init_indent = 1
 autocmd BufWritePost *.vue :CocCommand prettier.formatFile
 " }}}
 
+
+" lua require('nvim-biscuits').setup({})

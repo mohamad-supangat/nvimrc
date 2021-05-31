@@ -1,2 +1,2 @@
-require('config.bufferline')
+-- require('config.bufferline')
 -- require('config.lsp')

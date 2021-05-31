@@ -36,6 +36,8 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'honza/vim-snippets' " snippets helpers for coc
   Plug 'antoinemadec/coc-fzf' " coc tui with fzf 
  
+  " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  " Plug 'code-biscuits/nvim-biscuits'
   " " auto complete && language server
   " " Plug 'neovim/nvim-lspconfig')
   " " Plug 'hrsh7th/vim-vsnip')
