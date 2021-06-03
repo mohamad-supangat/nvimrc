@@ -1,13 +1,3 @@
-" airline plugin {{{
-let g:airline_theme = 'gruvbox_material'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-
-let g:airline_left_sep = ""
-let g:airline_right_sep = ""
-let g:airline_left_alt_sep = '/'
-let g:airline_left_alt_sep = '\'
-" }}}
 
 " indent line {{{
 let g:indentLine_char = '▏'
@@ -63,61 +53,9 @@ let g:startify_lists = [
 " }}}
 
 
-" coc vim   {{{
-" global extension for coc syncs
-let g:coc_global_extensions = ['coc-json', 'coc-marketplace', 'coc-pairs', 'coc-explorer']
-
-" Use <Tab> and <S-Tab> to navigate through popup menu
-inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-" Set completeopt to have a better completion experience
-set completeopt=menuone,noinsert,noselect
-
-" Avoid showing message extra message when using completion
-set shortmess+=c
-" }}}
-
-
-" completion nvim {{{
-" lua require'nvim_lsp'.pyls.setup{on_attach=require'completion'.on_attach}
-" let g:completion_enable_snippet = 'vim-vsnip'
-" }}}
-
-" let g:vim_vue_plugin_load_full_syntax = 1 " enable vue for full syntax
-let g:LanguageClient_serverCommands = {
-    \ 'vue': ['vls']
-    \ }
-
-let g:rainbow_active = 1 " active rainbow in every vim
-
-" coc configuration {{{
-
-" Highlight the symbol and its references when holding the cursor.
-autocmd CursorHold * silent call CocActionAsync('highlight')
-
-" Add `:Format` command to format current buffer.
-command! -nargs=0 Format :call CocAction('format')
-
-" Add `:Fold` command to fold current buffer.
-command! -nargs=? Fold :call     CocAction('fold', <f-args>)
-" }}}
-
 " tagalong and close tag config
 let g:tagalong_additional_filetypes = ['vue' , 'blade'] " tagalong aditional fileype
 let g:closetag_filetypes = 'html,xhtml,phtml,vue,blade' " add vue to auto close html tag
 
 
-" some vue plugin config {{{
-let g:vim_vue_plugin_use_sass = 1
-" let g:vim_vue_plugin_highlight_vue_keyword = 1
-let g:vim_vue_plugin_highlight_vue_attr	= 1
-let g:vim_vue_plugin_has_init_indent = 1
 
-
-" auto format .vue file on save / write
-autocmd BufWritePost *.vue :CocCommand prettier.formatFile
-" }}}
-
-
-" lua require('nvim-biscuits').setup({})

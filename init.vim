@@ -4,10 +4,12 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+ 
+
 runtime config/plugins.vim
 runtime config/main.vim
 runtime config/plugin-settings.vim
 runtime config/mappings.vim
 runtime config/functions.vim
-" lua require('init')
+lua require('init')
 
