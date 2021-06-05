@@ -154,7 +154,7 @@ set nowritebackup
 set noswapfile
 
 " }}} end of main setting
-
+set showtabline=2
 
 
 

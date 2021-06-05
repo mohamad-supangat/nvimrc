@@ -4,12 +4,18 @@ endif
 " Add the dein installation directory into runtimepath
 call plug#begin('~/.local/share/nvim/plugged')
   Plug 'KabbAmine/zeavim.vim'
-
+  Plug 'tpope/vim-fugitive'
   Plug 'kyazdani42/nvim-web-devicons' " neovim web dev icon
   " Plug 'akinsho/nvim-bufferline.lua' " bufferline for nvim 
   
   Plug 'christoomey/vim-tmux-navigator' " tmux navigation integration
-  Plug 'vim-airline/vim-airline' " airline plugin
+    
+
+  " lightline
+
+  Plug 'itchyny/lightline.vim'
+  Plug 'mengelbrecht/lightline-bufferline'
+  Plug 'itchyny/vim-cursorword'
 
   Plug 'sainnhe/gruvbox-material'
   " Plug 'pineapplegiant/spaceduck'
