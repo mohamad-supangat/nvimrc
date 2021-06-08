@@ -2,6 +2,7 @@
 " LightLine
 
 let g:lightline = {
+\   'colorscheme': "gruvbox_material",
 \   'active': {
 \    'left' : [[ 'mode', 'paste' ],
 \              [ 'gitbranch' ],
@@ -123,7 +124,7 @@ function! LightlineMode()
 endfunction
 
 function! String1()
-  return ' BANDITHIJO.GITHUB.IO'
+  return ' WIKWIKWIK'
 endfunction
 
 function! String2()
@@ -258,11 +259,47 @@ let g:closetag_filetypes = 'html,xhtml,phtml,vue,blade' " add vue to auto close 
 
 
 " some vue plugin config {{{
-let g:vim_vue_plugin_use_sass = 1
-" let g:vim_vue_plugin_highlight_vue_keyword = 1
-let g:vim_vue_plugin_highlight_vue_attr	= 1
-let g:vim_vue_plugin_has_init_indent = 1
+" let g:vim_vue_plugin_use_sass = 1
+" " let g:vim_vue_plugin_highlight_vue_keyword = 1
+" let g:vim_vue_plugin_highlight_vue_attr	= 1
+" let g:vim_vue_plugin_has_init_indent = 1
 
+let g:vim_vue_plugin_config = { 
+      \'syntax': {
+      \   'template': ['html', 'pug'],
+      \   'script': ['javascript', 'typescript', 'coffee'],
+      \   'style': ['scss', 'sass', 'less', 'stylus'],
+      \   'i18n': ['json', 'yaml'],
+      \   'route': 'json',
+      \   'docs': 'markdown',
+      \   'page-query': 'graphql',
+      \},
+      \'full_syntax': ['scss', 'html'],
+      \'initial_indent': ['script.javascript', 'style', 'yaml'],
+      \'attribute': 1,
+      \'keyword': 1,
+      \'foldexpr': 0,
+      \}
+
+autocmd FileType vue inoremap <buffer><expr> : InsertColon()
+
+function! InsertColon()
+  let tag = GetVueTag()
+  return tag == 'template' ? ':' : ': '
+endfunction
+
+function! OnChangeVueSyntax(syntax)
+  echom 'Syntax is '.a:syntax
+  if a:syntax == 'html'
+    setlocal commentstring=<!--%s-->
+    setlocal comments=s:<!--,m:\ \ \ \ ,e:-->
+  elseif a:syntax =~ 'css'
+    setlocal comments=s1:/*,mb:*,ex:*/ commentstring&
+  else
+    setlocal commentstring=//%s
+    setlocal comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,://
+  endif
+endfunction
 
 " auto format .vue file on save / write
 autocmd BufWritePost *.vue :CocCommand prettier.formatFile

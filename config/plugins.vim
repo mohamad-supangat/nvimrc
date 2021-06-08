@@ -3,6 +3,7 @@ if &compatible
 endif
 " Add the dein installation directory into runtimepath
 call plug#begin('~/.local/share/nvim/plugged')
+
   Plug 'KabbAmine/zeavim.vim'
   Plug 'tpope/vim-fugitive'
   Plug 'kyazdani42/nvim-web-devicons' " neovim web dev icon
@@ -57,7 +58,10 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'rbgrouleff/bclose.vim' " closing buffer wisdthout pane
 
   " language && syntax hightlight {{{
+  let g:polyglot_disabled = ['vue']
   Plug 'sheerun/vim-polyglot' " solid syntax hightlight for  vim 
+
+
   Plug 'leafOfTree/vim-vue-plugin' " best vue integration
   " Plug 'leafOfTree/vim-matchtag'
   Plug 'alvan/vim-closetag' " auto close html tag
@@ -70,6 +74,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } " for markdown preview
   " }}}
  
+  " Plug 'yaegassy/coc-blade-formatter', {'do': 'yarn install --frozen-lockfile'}
   " Plug 'edkolev/tmuxline.vim'
   " Plug 'skanehira/docker.vim'
 call plug#end()
