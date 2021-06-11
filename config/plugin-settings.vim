@@ -124,7 +124,7 @@ function! LightlineMode()
 endfunction
 
 function! String1()
-  return ' WIKWIKWIK'
+  return ' 🦊😀🤩'
 endfunction
 
 function! String2()
@@ -161,7 +161,8 @@ endfunction
 
 " indent line {{{
 let g:indentLine_char = '▏'
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indent_blankline_char = '▏'
 
 let g:indent_guides_auto_colors = 1
 let g:indentLine_fileTypeExclude = [
