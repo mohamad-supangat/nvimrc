@@ -13,16 +13,18 @@ call plug#begin('~/.local/share/nvim/plugged')
 
   Plug 'itchyny/lightline.vim'
   Plug 'mengelbrecht/lightline-bufferline'
-  Plug 'itchyny/vim-cursorword'
+  " Plug 'itchyny/vim-cursorword'
 
-  Plug 'sainnhe/gruvbox-material'
+  " Plug 'sainnhe/gruvbox-material'
+  Plug 'lifepillar/vim-gruvbox8'
+
   " Plug 'pineapplegiant/spaceduck'
-  Plug 'rakr/vim-one'
+  " Plug 'rakr/vim-one'
 
   " Plug 'tjdevries/colorbuddy.nvim' " color scheme maker
   Plug 'rhysd/accelerated-jk' "navigate faster with jk
   Plug 'Yggdroot/indentLine' " show indentline
-  Plug 'lukas-reineke/indent-blankline.nvim' " indentLine
+  " Plug 'lukas-reineke/indent-blankline.nvim' " indentLine
  
   Plug 'tpope/vim-commentary' " auto commennt 
   Plug 'AndrewRadev/tagalong.vim' " tag helper
@@ -44,11 +46,11 @@ call plug#begin('~/.local/share/nvim/plugged')
   " language && syntax hightlight {{{
   let g:polyglot_disabled = ['vue']
   Plug 'sheerun/vim-polyglot' " solid syntax hightlight for  vim 
-
+  Plug 'tweekmonster/startuptime.vim'
 
   Plug 'leafOfTree/vim-vue-plugin' " best vue integration
   Plug 'alvan/vim-closetag' " auto close html tag
 
-  Plug 'neoclide/coc-vetur' " vue language server from coc
+  " Plug 'neoclide/coc-vetur' " vue language server from coc
 call plug#end()
  

@@ -2,7 +2,7 @@
 " LightLine
 
 let g:lightline = {
-\   'colorscheme': "gruvbox_material",
+\   'colorscheme': "gruvbox8",
 \   'active': {
 \    'left' : [[ 'mode', 'paste' ],
 \              [ 'gitbranch' ],
