@@ -15,8 +15,8 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'mengelbrecht/lightline-bufferline'
   " Plug 'itchyny/vim-cursorword'
 
-  " Plug 'sainnhe/gruvbox-material'
-  Plug 'lifepillar/vim-gruvbox8'
+  Plug 'sainnhe/gruvbox-material'
+  " Plug 'lifepillar/vim-gruvbox8'
 
   " Plug 'pineapplegiant/spaceduck'
   " Plug 'rakr/vim-one'
