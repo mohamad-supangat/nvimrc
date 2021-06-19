@@ -9,27 +9,18 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'christoomey/vim-tmux-navigator' " tmux navigation integration
     
 
-  " lightline
+ " Plug 'itchyny/vim-cursorword'
+ 
+  Plug 'akinsho/nvim-bufferline.lua'
+  Plug 'datwaft/bubbly.nvim'
 
-  Plug 'itchyny/lightline.vim'
-  Plug 'mengelbrecht/lightline-bufferline'
-  " Plug 'itchyny/vim-cursorword'
-
-  " Plug 'sainnhe/gruvbox-material'
   Plug 'folke/tokyonight.nvim'
-  " Plug 'lifepillar/vim-gruvbox8'
+  
 
-  " Plug 'pineapplegiant/spaceduck'
-  " Plug 'rakr/vim-one'
-
-  " Plug 'tjdevries/colorbuddy.nvim' " color scheme maker
   Plug 'rhysd/accelerated-jk' "navigate faster with jk
-  Plug 'Yggdroot/indentLine' " show indentline
-  " Plug 'lukas-reineke/indent-blankline.nvim' " indentLine
+  Plug 'lukas-reineke/indent-blankline.nvim' " indentLine
  
   Plug 'tpope/vim-commentary' " auto commennt 
-  Plug 'AndrewRadev/tagalong.vim' " tag helper
-  Plug 'luochen1990/rainbow' " rinbow bracket
   Plug 'editorconfig/editorconfig-vim' " editorconfig for vim
 
   Plug 'junegunn/fzf', { 'build': './install --all', 'merged': 0 } " gui preview
@@ -44,18 +35,16 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'voldikss/vim-floaterm' " floating terminal
   Plug 'rbgrouleff/bclose.vim' " closing buffer wisdthout pane
 
-  " language && syntax hightlight {{{
-  let g:polyglot_disabled = ['vue']
-  " Plug 'sheerun/vim-polyglot' " solid syntax hightlight for  vim 
-  "
+  
+  
+  " treesitter dan module tambahan
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+  Plug 'windwp/nvim-ts-autotag' "auto close tag
+  Plug 'p00f/nvim-ts-rainbow' " rainbow
+  Plug 'theHamsta/nvim-treesitter-pairs'
+  Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 
   Plug 'tweekmonster/startuptime.vim'
-
-  Plug 'leafOfTree/vim-vue-plugin' " best vue integration
-  Plug 'alvan/vim-closetag' " auto close html tag
- 
-  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
   " Plug 'neoclide/coc-vetur' " vue language server from coc
 call plug#end()
