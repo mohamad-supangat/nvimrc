@@ -1,5 +1,5 @@
 require'bufferline'.setup{
-  -- separator_style = "slant",
+  separator_style = "slant",
   -- indicator_icon = 'asd',
   offsets = {
       {

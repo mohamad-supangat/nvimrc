@@ -18,7 +18,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   
 
   Plug 'rhysd/accelerated-jk' "navigate faster with jk
-  Plug 'lukas-reineke/indent-blankline.nvim' " indentLine
+  Plug 'lukas-reineke/indent-blankline.nvim', {'branch': 'lua'} " indentLine
  
   Plug 'tpope/vim-commentary' " auto commennt 
   Plug 'editorconfig/editorconfig-vim' " editorconfig for vim

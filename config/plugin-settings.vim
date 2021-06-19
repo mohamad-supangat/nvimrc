@@ -1,20 +1,10 @@
+let g:indentLine_enabled = 1
+let g:indent_blankline_char = "▏"
+" highlight IndentBlanklineChar guifg=#00FF00 gui=nocombine
+" highlight IndentBlanklineSpaceChar guifg=#00FF00 gui=nocombine
 
-" indent line {{{
-let g:indentLine_char = '▏'
-" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-let g:indent_blankline_char = '▏'
 
-let g:indent_guides_auto_colors = 1
-let g:indentLine_fileTypeExclude = [
-    \'defx',
-    \'markdown',
-    \'denite',
-    \'startify',
-    \'tagbar',
-    \'vista_kind',
-    \'vista'
-      \]
-" }}}
+
 
 " fzf settings {{{
 let g:fzf_preview_window = []
@@ -97,5 +87,7 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 " auto format .vue file on save / write
 autocmd BufWritePost *.vue :CocCommand prettier.formatFile
 " }}}
+
+
 
 
