@@ -15,7 +15,8 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'mengelbrecht/lightline-bufferline'
   " Plug 'itchyny/vim-cursorword'
 
-  Plug 'sainnhe/gruvbox-material'
+  " Plug 'sainnhe/gruvbox-material'
+  Plug 'folke/tokyonight.nvim'
   " Plug 'lifepillar/vim-gruvbox8'
 
   " Plug 'pineapplegiant/spaceduck'
@@ -45,11 +46,16 @@ call plug#begin('~/.local/share/nvim/plugged')
 
   " language && syntax hightlight {{{
   let g:polyglot_disabled = ['vue']
-  Plug 'sheerun/vim-polyglot' " solid syntax hightlight for  vim 
+  " Plug 'sheerun/vim-polyglot' " solid syntax hightlight for  vim 
+  "
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+
   Plug 'tweekmonster/startuptime.vim'
 
   Plug 'leafOfTree/vim-vue-plugin' " best vue integration
   Plug 'alvan/vim-closetag' " auto close html tag
+ 
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
   " Plug 'neoclide/coc-vetur' " vue language server from coc
 call plug#end()

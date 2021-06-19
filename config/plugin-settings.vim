@@ -2,7 +2,7 @@
 " LightLine
 
 let g:lightline = {
-\   'colorscheme': "gruvbox_material",
+\   'colorscheme': "tokyonight",
 \   'active': {
 \    'left' : [[ 'mode', 'paste' ],
 \              [ 'gitbranch' ],
@@ -265,22 +265,22 @@ let g:closetag_filetypes = 'html,xhtml,phtml,vue,blade' " add vue to auto close 
 " let g:vim_vue_plugin_highlight_vue_attr	= 1
 " let g:vim_vue_plugin_has_init_indent = 1
 
-let g:vim_vue_plugin_config = { 
-      \'syntax': {
-      \   'template': ['html', 'pug'],
-      \   'script': ['javascript', 'typescript', 'coffee'],
-      \   'style': ['scss', 'sass', 'less', 'stylus'],
-      \   'i18n': ['json', 'yaml'],
-      \   'route': 'json',
-      \   'docs': 'markdown',
-      \   'page-query': 'graphql',
-      \},
-      \'full_syntax': ['scss', 'html'],
-      \'initial_indent': ['script.javascript', 'style', 'yaml'],
-      \'attribute': 1,
-      \'keyword': 1,
-      \'foldexpr': 0,
-      \}
+" let g:vim_vue_plugin_config = { 
+"       \'syntax': {
+"       \   'template': ['html'],
+"       \   'script': ['javascript'],
+"       \   'style': ['scss', 'sass', 'css'],
+"       " \   'i18n': ['json', 'yaml'],
+"       \   'route': 'json',
+"       \   'docs': 'markdown',
+"       " \   'page-query': 'graphql',
+"       \},
+"       \'full_syntax': ['scss', 'html'],
+"       \'initial_indent': ['script.javascript', 'style', 'yaml'],
+"       \'attribute': 1,
+"       \'keyword': 1,
+"       \'foldexpr': 0,
+"       \}
 
 autocmd FileType vue inoremap <buffer><expr> : InsertColon()
 
@@ -290,7 +290,7 @@ function! InsertColon()
 endfunction
 
 function! OnChangeVueSyntax(syntax)
-  echom 'Syntax is '.a:syntax
+  " echom 'Syntax is '.a:syntax
   if a:syntax == 'html'
     setlocal commentstring=<!--%s-->
     setlocal comments=s:<!--,m:\ \ \ \ ,e:-->
