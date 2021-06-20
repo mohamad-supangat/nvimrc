@@ -43,7 +43,10 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'p00f/nvim-ts-rainbow' " rainbow
   Plug 'theHamsta/nvim-treesitter-pairs'
   Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+  
 
+
+  Plug 'kyazdani42/nvim-tree.lua'
   Plug 'tweekmonster/startuptime.vim'
 
   " Plug 'neoclide/coc-vetur' " vue language server from coc

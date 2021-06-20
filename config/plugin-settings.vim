@@ -47,7 +47,7 @@ let g:startify_lists = [
 
 " coc vim   {{{
 " global extension for coc syncs
-let g:coc_global_extensions = ['coc-json', 'coc-marketplace', 'coc-pairs', 'coc-explorer']
+let g:coc_global_extensions = ['coc-json', 'coc-marketplace']
 
 " Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
