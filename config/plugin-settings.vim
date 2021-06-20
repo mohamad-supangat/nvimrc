@@ -2,6 +2,7 @@ let g:indentLine_enabled = 1
 let g:indent_blankline_char = "▏"
 " highlight IndentBlanklineChar guifg=#00FF00 gui=nocombine
 " highlight IndentBlanklineSpaceChar guifg=#00FF00 gui=nocombine
+let g:indent_blankline_filetype_exclude = ['help', 'startify']
 
 
 
