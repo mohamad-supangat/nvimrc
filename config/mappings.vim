@@ -216,6 +216,10 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 nmap <leader>qf  <Plug>(coc-fix-current)
 
 
+" multiple cursor
+nmap <silent> <C-c> <Plug>(coc-cursors-position)
+nmap <silent> <C-d> <Plug>(coc-cursors-word)
+xmap <silent> <C-d> <Plug>(coc-cursors-range)
 " }}}
 
 
