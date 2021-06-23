@@ -216,7 +216,7 @@ let g:startify_lists = [
 
 " coc vim   {{{
 " global extension for coc syncs
-let g:coc_global_extensions = ['coc-json', 'coc-marketplace', 'coc-pairs', 'coc-explorer']
+let g:coc_global_extensions = ['coc-json', 'coc-marketplace', 'coc-pairs']
 
 " Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -306,5 +306,12 @@ endfunction
 autocmd BufWritePost *.vue :CocCommand prettier.formatFile
 " }}}
 
-
 " lua require('nvim-biscuits').setup({})
+
+lua <<EOF
+    local tree_cb = require'nvim-tree.config'.nvim_tree_callback
+    vim.g.nvim_tree_bindings = {
+      ["l"]           = tree_cb("edit"),
+      ["h"]           = tree_cb("close_node"),
+    }
+EOF

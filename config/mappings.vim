@@ -162,7 +162,7 @@ vmap <BS> "_d
 " coc && fzf keybinds {{
 
 " toogle explorer
-nnoremap <C-n> :CocCommand explorer<CR>
+nnoremap <C-n> :NvimTreeToggle<CR>
 
 " toogle fzf coc
 nmap <leader>coc :CocFzfList<CR>
