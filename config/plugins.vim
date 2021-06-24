@@ -5,7 +5,7 @@ endif
 call plug#begin('~/.local/share/nvim/plugged')
   Plug 'neovim/nvim-lspconfig'
   Plug 'glepnir/lspsaga.nvim'
-  Plug 'stevearc/aerial.nvim'
+  " Plug 'stevearc/aerial.nvim'
   
   Plug 'hrsh7th/nvim-compe'
   Plug 'hrsh7th/vim-vsnip'
@@ -23,25 +23,25 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'christoomey/vim-tmux-navigator' " tmux navigation integration
 
   Plug 'akinsho/nvim-bufferline.lua'
-  Plug 'datwaft/bubbly.nvim'
+  " Plug 'datwaft/bubbly.nvim'
+  Plug 'hoob3rt/lualine.nvim'
 
-  Plug 'folke/tokyonight.nvim'
+
+  " Plug 'folke/tokyonight.nvim'
+
+  " Plug 'rktjmp/lush.nvim'
+  " Plug 'mnabila/gruvboy.nvim'
+  Plug 'Mofiqul/vscode.nvim'
 
   Plug 'rhysd/accelerated-jk' "navigate faster with jk
   Plug 'lukas-reineke/indent-blankline.nvim', {'branch': 'lua'} " indentLine
  
-  " Plug 'tpope/vim-commentary' " auto commennt 
   Plug 'terrortylor/nvim-comment'
   Plug 'editorconfig/editorconfig-vim' " editorconfig for vim
 
   Plug 'junegunn/fzf', { 'build': './install --all', 'merged': 0 } " gui preview
   Plug 'junegunn/fzf.vim', { 'depends': 'fzf'}
   
-  " Plug 'neoclide/coc.nvim', {'branch': 'release'} " language server
-
-  " Plug 'honza/vim-snippets' " snippets helpers for coc
-  " Plug 'antoinemadec/coc-fzf' " coc tui with fzf 
- 
   Plug 'mhinz/vim-startify' " start page for vim 
 
   Plug 'voldikss/vim-floaterm' " floating terminal
@@ -69,6 +69,8 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'kyazdani42/nvim-tree.lua'
   Plug 'tweekmonster/startuptime.vim'
 
-  " Plug 'neoclide/coc-vetur' " vue language server from coc
+
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'lewis6991/gitsigns.nvim'
 call plug#end()
  

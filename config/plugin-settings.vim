@@ -8,10 +8,10 @@ let g:indent_blankline_filetype_exclude = ['help', 'startify']
 let g:fzf_preview_window = []
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --depth 10 --ignore .git -f -g ""' " show hidden file in fzf
 
-" Hide status bar while using fzf commands                                                                          
-if has('nvim') || has('gui_running')                                                                                
-  autocmd! FileType fzf                                                                                             
-  autocmd  FileType fzf set laststatus=0 | autocmd WinLeave <buffer> set laststatus=2                               
+" Hide status bar while using fzf commands
+if has('nvim') || has('gui_running')
+  autocmd! FileType fzf
+  autocmd  FileType fzf set laststatus=0 | autocmd WinLeave <buffer> set laststatus=2
 endif
 " }}}
 
@@ -33,12 +33,12 @@ let g:floaterm_autoclose=1
 
 " startify config  {{{
 let g:startify_lists = [
-          \ { 'type': 'sessions',  'header': ['   Sessions']       },
-          \ { 'type': 'files',     'header': ['   MRU']            },
-          \ { 'type': 'dir',       'header': ['   MRU '. getcwd()] },
-          \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
-          \ { 'type': 'commands',  'header': ['   Commands']       },
-          \ ]
+      \ { 'type': 'sessions',  'header': ['   Sessions']       },
+      \ { 'type': 'files',     'header': ['   MRU']            },
+      \ { 'type': 'dir',       'header': ['   MRU '. getcwd()] },
+      \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+      \ { 'type': 'commands',  'header': ['   Commands']       },
+      \ ]
 " }}}
 
 
@@ -73,8 +73,8 @@ endfunction
 
 
 let g:LanguageClient_serverCommands = {
-    \ 'vue': ['vls']
-    \ }
+      \ 'vue': ['vls']
+      \ }
 
 " Enable alignment
 let g:neoformat_basic_format_align = 1

@@ -8,12 +8,8 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-let g:tokyonight_italic_functions = 1
-let g:tokyonight_italic_variables = 1
-let g:tokyonight_style = 'night'
-
-set background=dark
-colorscheme  tokyonight
+let g:vscode_style = "dark"
+colorscheme vscode
 
 if !has('nvim')
   let &t_ZH="\e[3m"
@@ -137,7 +133,7 @@ endif
 
 " Relative line numbers
 set number
-" set relativenumber
+set relativenumber
 
 " augroup numbertoggle
 "   autocmd!

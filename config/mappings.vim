@@ -143,5 +143,11 @@ vmap <BS> "_d
 " toogle explorer
 nnoremap <C-n> :NvimTreeToggle<CR>
 
-" nnoremap <Leader>a :lua require"arial".toggle()<CR>
 
+" vim commenter plugin {{
+nnoremap <space>/ :CommentToggle<CR>
+vnoremap <space>/ :CommentToggle<CR>
+nnoremap <space>ni :CommentToggle<CR>
+vnoremap <space>ni :CommentToggle<CR>
+vnoremap / :CommentToggle<CR>
+" }}
